@@ -4,10 +4,8 @@
 body {
     background-image: url(../image/1282794.jpg);
     background-size: cover; /* Isso fará com que a imagem cubra todo o background */
-    background-position: center; /* Isso centralizará a imagem no background */
-    background-color: rgba(0, 0, 0, 0.0); /* Aqui, o último valor (0.5) define a transparência, onde 0 é completamente transparente e 1 é completamente opaco */
+    background-position: top; /* Isso centralizará a imagem no background */
     display: flex;
-    opacity: calc(0.0.75);
     flex-direction: column;
     align-items: center;
     font-family: 'Poppins', sans-serif;
