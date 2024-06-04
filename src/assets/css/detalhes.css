@@ -36,9 +36,9 @@ body {
     height: 400px;
 }
 
-#titulo {      
+#titulo {  
+    display: flex;    
     flex-direction: center;                         
-    display: flex;
     align-items: center;
     justify-content: center;
     line-height: 1.10;
@@ -101,39 +101,34 @@ body {
     font-size: 30px;
 }
 
-.titulo-orientacoes{
-    display: flex;
-   
-    height: 200px;
-    width: 1440px;
-    color: #077262;
-    background-color: #00CEC8;
-    margin: 40px 0 40px;
-    color: #FFFFFF;    
-    border-radius: 20px;
+
+.titulo-orientacoes {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: nowrap; 
+  height: 200px; /* Define altura do container */
+  width:1320px; /* Define largura do container */
+  color: #077262;
+  background-color: #00CEC8;
+  margin: 40px 0 40px;
+  color: #FFFFFF;
+  border-radius: 20px;
 }
 
-/* .titulo-orientacoes h2 {
-    height: 150px;
-    width: 1440px;
-    color: #077262;
-    font-weight: 800;
-    text-shadow: 4px 4px 6px #077262;
-    font-size: 2.6rem;
-    color: #FFFFFF;  
-}
-
-.titulo-orientacoes p{   
-    height: 150px;
-    width: 1440px;
-    color: #077262;
-    font-weight: 800;
-    text-shadow: 4px 4px 6px #077262;
-    font-size: 1rem;
-    color: #FFFFFF;
-} */
-
-
+.titulo-orientacoes h2 {
+    font-weight: 800; /* Aumenta o peso da fonte */
+    text-shadow: 4px 4px 6px #077262; /* Adiciona sombra ao texto */
+    font-size: 2.6rem; /* Define o tamanho da fonte */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do h2 */
+  }
+  
+  .titulo-orientacoes p {
+    font-weight: 400; /* Define o peso da fonte para normal */
+    text-shadow: none; /* Remove a sombra do texto */
+    font-size: 1rem; /* Define o tamanho da fonte */
+  }
 
 
 .figure-orientacoes {
