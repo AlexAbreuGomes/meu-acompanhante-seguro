@@ -5,10 +5,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),  url(../image/1282794.jpg);
+    background-image: url(../image/1282794.jpg);
     background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.0);
+    background-position: center;    
     font-family: 'Poppins', sans-serif;
     color: #077262;
 }
@@ -43,7 +42,7 @@ body {
     align-items: center;
     justify-content: center;
     line-height: 1.10;
-    font-size: 2.9rem;
+    font-size: 2.8em;
     color: #FFFFFF;
     text-align: center;
 }
@@ -58,15 +57,19 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 1;
     margin: 40px 0 40px;
-    text-align: center;
-    font-size: 2.6rem;
     background-color: #00CEC8;
-    color: #077262;
     height: 250px;
     width: 1320px;
     border-radius: 20px;
+
+}
+
+#aviso h2 {
+    line-height: 1;
+    text-align: center;
+    font-size: 2.6em;
+    color: #077262;
     text-shadow: 2px 2px 4px #ffffff;
 }
 
@@ -86,7 +89,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: justify;
-    font-size: 20px;
     font-weight: 800;
     padding: 0 50px;
     background-color: #00CEC8;
@@ -98,7 +100,7 @@ body {
 
 .orientacoes-texto h2 {
     text-align: justify;
-    font-size: 25px;
+    font-size: 1.2em;
     margin: 10px;
     text-shadow: 2px 2px 4px #ffffff;
 }
@@ -136,12 +138,10 @@ body {
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 0.8em;
     height: 40px;
     width: 150px;
     line-height: 1.1;
-    padding: 10px 16px;
     margin: 30px;
     text-align: center;
     text-decoration: none;
@@ -151,10 +151,7 @@ body {
     touch-action: manipulation;
 }
 
-.button_saiba_mais {
-    background-color: #FFFFFF;
-    color: #00CEC8;
-}
+
 
 .button_saiba_mais:hover,
 .button_saiba_mais:focus {
@@ -181,63 +178,4 @@ body {
     background-color: #00CEC8;
     width: 1440px;
     height: 400px;
-}
-
-
-/* Dark mode styles */
-.dark-mode body {
-    color: #e0e0e0;
-}
-
-.dark-mode body::before {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.dark-mode #user-options {
-    background-color: #1e1e1e;
-}
-
-.dark-mode #cabecalho {
-    background-color: #333333;
-}
-
-.dark-mode #titulo {
-    color: #e0e0e0;
-}
-
-.dark-mode #titulo span {
-    -webkit-text-stroke: 3px #121212;
-}
-
-.dark-mode #aviso {
-    background-color: #333333;
-    color: #e0e0e0;
-}
-
-.dark-mode .orientacoes-texto {
-    background-color: #333333;
-    color: #e0e0e0;
-}
-
-.dark-mode .figure-orientacoes {
-    background-color: #4f4f4f;
-}
-
-.dark-mode .button_saiba_mais,
-.dark-mode .botaoLogin,
-.dark-mode .botaoDark,
-.dark-mode .botaoFont {
-    background-color: #4f4f4f;
-    color: #e0e0e0;
-}
-
-.dark-mode .button_saiba_mais:hover,
-.dark-mode .botaoLogin:hover,
-.dark-mode .botaoDark:hover,
-.dark-mode .botaoFont:hover {
-    background-color: #666666;
-}
-
-.dark-mode .footer {
-    background-color: #333333;
 }

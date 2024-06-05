@@ -7,7 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/assets/css/reset.css">
-    <link rel="stylesheet" href="../src/assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../src/assets/css/index.css">
+    <!-- <link rel="stylesheet" href="../src/assets/css/dark-mode.css"> -->
     <script src="script.js" defer></script>
     <title>Meu acompanhante seguro</title>
 </head>
@@ -16,7 +17,7 @@
     <header>
         <nav id="user-options">
             <button class="botaoLogin">LOGIN</button>
-            <button class="botaoDark" onclick="toggleDarkMode()">DARK</button>
+            <button class="botaoDark">DARK</button>
             <button class="botaoFont">FONT</button>
         </nav>
         <div id="cabecalho">
@@ -33,8 +34,8 @@
     </header>
 
     <aside id="aviso">
-        <h3>Campanha de vacinação<br>contra dengue!</h3>
-        <button class="button_saiba_mais">Saiba Mais</button>
+        <h2>Campanha de vacinação<br>contra dengue!</h2>
+        <button class="button_saiba_mais"><a href="">Saiba Mais</a></button>
     </aside>
 
     <section class="orientacoes">
@@ -45,9 +46,9 @@
 
         </div>
         <figure class="figure-orientacoes">
-            <a href="../src/detalhes.html" target="_blank">
+            <!-- <a href="../src/detalhes.html" target="_blank">
                 <img src="../src/assets/image/test-nurse.jpg" alt="Orientações">
-            </a>
+            </a> -->
         </figure>
     </section>
 
@@ -91,7 +92,9 @@
     </section>
     <!-- Repetição das seções, se necessário -->
     <footer class="footer">
-        <!-- Conteúdo do footer -->
+        <figure>
+            <img id="logo-governo" src="../src/assets/image/logo_Governo-RN-removebg-preview.png" alt="">
+        </figure>
     </footer>
 </body>
 
