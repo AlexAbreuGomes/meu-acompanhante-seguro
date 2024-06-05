@@ -1,52 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> LOGIN </title>
-
-    <link rel="stylesheet" href="assets/css/login.css">
-
+    <link rel="stylesheet" href="../src/assets/css/reset.css">
+    <link rel="stylesheet" href="../src/assets/css/login.css">
+    <title>Admin Login - Meu Acompanhante Seguro</title>
 </head>
-
 <body>
-    <div id="primeira-coluna"></div>
-    <br>
-    <div class="coluna-titulo" >
-        <div class="titulo">
-            <img src="/src/assets/image/medico-explicando.png" alt="medico-explicando">
-        </div>
-
-        <div class="titulo">
-            <h2 class="fontes"> MEU ACOMPANHANTE SEGURO</h2>
-        </div>
-
-        <div class="titulo">
-            <img src="/src/assets/image/planilha.png" alt="planilha">
-        </div>
-
-    </div>
-    <div id="coluna-campanha"><p class="fontes"> Campanha de vacinação contra dngue!! Saiba mais </p></div>
-    
-    <div class="pai-login">        
-        <div id="div-login">
-            <p class="fontes"> formulario de login </p>
-            <input type="EMAIL" name="" id="">
-            <input type="SENHA" name="" id="">
-            <button id="login"><P class="fontes"> LOGIN </P></button>
-        </div>
-
-        <div id="imagem">
-            <img src="/src/assets/image/medico-consultando.png" alt="medico consultando">
-        </div>
-    
-    </div>    
-     
-    <div id="rodape"><h2 class="fontes"> HOSPITAL SANTA CATARINA </h2></div>
-    
-    <div id="rodape-2">
-        <img src="/src/assets/image/senac-logo.png" alt="">
-    </div>
-  
+    <main>
+        <section class="login-container">
+            <section id="titulo-login">
+                <h2><span>MEU</span> ACOMPANHANTE SEGURO</h2>
+            </section>
+            <h3>Bem-vindo de volta!</h3>
+            <form action="/login" method="POST">
+                <div class="input-container">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-button">Entrar</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

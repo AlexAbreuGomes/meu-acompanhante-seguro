@@ -1,23 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.0);
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../image/1282794.jpg);
+    background-image: linear-gradient(rgb(15, 29, 28, 1), rgb(15, 29, 28, 0.9)),  url(../image/1282794.jpg);
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.0);
     font-family: 'Poppins', sans-serif;
-    color: #077262;
+    color: #feffff;
+}
+
+figure {
+    background-image: linear-gradient(rgb(15, 29, 28, 0.9), rgb(15, 29, 28, 0.9))
+}
+.figure-orientacoes {
+    background-image: linear-gradient(rgb(15, 29, 28, 1), rgb(15, 29, 28, 1))
 }
 
 #user-options {
-    display: flex;
-    flex-direction: row-reverse;
     align-items: center;
+    display: flex;
     height: 95px;
     width: 1440px;
+    flex-direction: row-reverse;
 }
 
 #user-options button {
@@ -27,7 +47,7 @@ body {
 #cabecalho {
     display: flex;
     justify-content: space-between;
-    background-color: #00CEC8;
+    background-color: #0f1d1c;
     height: 400px;
     width: 1440px;
 }
@@ -36,49 +56,37 @@ body {
     height: 400px;
 }
 
-#titulo {  
+#titulo {      
+    flex-direction: center;                         
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    line-height: 1.1;
+    line-height: 1.10;
     font-size: 2.9rem;
-    color: #FFFFFF;
+    color: #ffffff;
+    text-align: center;
 }
 
 #titulo span {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 3px #FFFFFF;
+    -webkit-text-stroke: 3px #ffffff;
 }
 
-.titulo-orientacoes {
+#aviso {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    margin: 40px 0 40px;
+    text-align: center;
+    font-size: 2.6rem;
+    background-color: #0f1d1c;
+    color: #ffffff;
     height: 250px;
     width: 1320px;
-    background-color: #00CEC8;
-    color: #077262;
-    margin: 40px 0;
-    margin-bottom: 50px;
-    padding: 50px;
     border-radius: 20px;
-}
-
-.titulo-orientacoes h2 {
-    font-size: 2.6rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px #ffffff;
-}
-
-.titulo-orientacoes p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: justify;
-    line-height: 1.1;
-    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #0f1d1c;
 }
 
 .orientacoes {
@@ -100,7 +108,7 @@ body {
     font-size: 20px;
     font-weight: 800;
     padding: 0 50px;
-    background-color: #00CEC8;
+    background-color: #0f1d1c;
     height: 360px;
     width: 660px;
     border-top-left-radius: 20px;
@@ -111,20 +119,21 @@ body {
     text-align: justify;
     font-size: 25px;
     margin: 10px;
-    text-shadow: 2px 2px 4px #ffffff;
+    text-shadow: 2px 2px 4px c;
 }
 
 .figure-orientacoes {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c0f6f4;
+    background-color: #0f1d1c;
     height: 360px;
     width: 660px;
     margin: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)) , url(../image/medico-homem.png)
 }
 
 .imagem-orientacoes {
@@ -132,17 +141,9 @@ body {
     height: 100%;
     max-width: 100%;
     object-fit: cover;
-}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))
 
-.orientacoes-justicado {
-    text-align: justify;
 }
-
-.orientacoes-titulo {
-    font-size: 1.5rem;
-    margin-bottom: 35px;
-}
-
 .button_saiba_mais,
 .botaoLogin,
 .botaoDark,
@@ -150,8 +151,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #00CEC8;
-    color: #FFFFFF;
+    background-color:#ffffff ;
+    color: #00CEC8;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -173,7 +174,7 @@ body {
 
 .button_saiba_mais {
     background-color: #FFFFFF;
-    color: #00CEC8;
+    color: #0f1d1c;
 }
 
 .button_saiba_mais:hover,
@@ -181,9 +182,27 @@ body {
     background-color: #00928d;
 }
 
+.botaoDark:hover,
+.botaoDark:focus {
+    background-color: #00928d;
+}
+
+.botaoFont:hover,
+.botaoFont:focus {
+    background-color:#00928d;
+}
+
+.botaoLogin:hover,
+.botaoLogin:focus {
+    background-color:#00928d;
+}
+
 .footer {
-    background-color: #00CEC8;
+    margin-top: 100px;
+    background-color: #0f1d1c;
     width: 1440px;
     height: 400px;
-    margin-top: 100px;
 }
+
+
+/*  */
