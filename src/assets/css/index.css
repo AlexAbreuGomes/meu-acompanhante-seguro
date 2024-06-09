@@ -175,7 +175,34 @@ body {
 
 .footer {
     margin-top: 100px;
-    background-color: #00CEC8;
+    background-color: #FFFFFF;
     width: 1440px;
     height: 400px;
 }
+
+#rodape {
+    display: flex;
+    background-color: #00CEC8;
+    width: 1440px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#localizacao {
+    display: flex;
+    width: 1440px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#localizacao-img{
+    margin-right: 10px;
+}
+
+#senac-logo {
+    width: 110px;
+    height: 65px;
+}
+
