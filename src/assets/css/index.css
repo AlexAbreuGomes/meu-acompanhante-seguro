@@ -10,9 +10,10 @@ body {
     background-position: center;    
     font-family: 'Poppins', sans-serif;
     color: #077262;
+    transition: .5s;
 }
 
-#user-options {
+#opcoesUsuarios {
     align-items: center;
     display: flex;
     height: 95px;
@@ -20,11 +21,11 @@ body {
     flex-direction: row-reverse;
 }
 
-#user-options button {
+#opcoesUsuarios button {
     margin-left: 10px;
 }
 
-#cabecalho {
+.cabecalho {
     display: flex;
     justify-content: space-between;
     background-color: #00CEC8;
@@ -32,7 +33,7 @@ body {
     width: 1440px;
 }
 
-#cabecalho img {
+.cabecalho img {
     height: 400px;
 }
 
@@ -42,7 +43,7 @@ body {
     align-items: center;
     justify-content: center;
     line-height: 1.10;
-    font-size: 2.8em;
+    font-size: 3rem;
     color: #FFFFFF;
     text-align: center;
 }
@@ -52,7 +53,7 @@ body {
     -webkit-text-stroke: 3px #FFFFFF;
 }
 
-#aviso {
+.aviso {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,14 +63,43 @@ body {
     height: 250px;
     width: 1320px;
     border-radius: 20px;
-
 }
 
-#aviso h2 {
+.tituloOrientacoes {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 250px;
+    width: 1320px;
+    background-color: #00CEC8;
+    color: #077262;
+    margin: 40px 0;
+    margin-bottom: 50px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.tituloOrientacoes h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #ffffff;
+}
+
+.tituloOrientacoes p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.aviso h2 {
     line-height: 1;
     text-align: center;
-    font-size: 2.6em;
-    color: #077262;
+    font-size: 3em;
+    font-weight: 800;
     text-shadow: 2px 2px 4px #ffffff;
 }
 
@@ -83,7 +113,7 @@ body {
     border-radius: 20px;
 }
 
-.orientacoes-texto {
+.orientacoesTexto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,18 +128,24 @@ body {
     border-bottom-left-radius: 20px;
 }
 
-.orientacoes-texto h2 {
+.orientacoesTexto h2 {
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1.75em;
     margin: 10px;
     text-shadow: 2px 2px 4px #ffffff;
 }
 
-.figure-orientacoes {
+.orientacoesTexto p {
+    text-align: justify;
+    font-size: 1em;
+    margin: 10px;
+    text-shadow: 2px 2px 4px #ffffff;
+}
+
+.imagemOrientacoes {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c0f6f4;
     height: 360px;
     width: 660px;
     margin: 0;
@@ -118,17 +154,15 @@ body {
     overflow: hidden;
 }
 
-.imagem-orientacoes {
+.imagemOrientacoes {
     width: auto;
     height: 100%;
-    max-width: 100%;
+    max-width: 50%;
     object-fit: cover;
-
 }
-.button_saiba_mais,
-.botaoLogin,
-.botaoDark,
-.botaoFont {
+
+.botao,
+.modoEscuro {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,31 +185,63 @@ body {
     touch-action: manipulation;
 }
 
+a {
+    text-decoration: none;
+    color:#00928d; 
+}
 
+a:hover,
+a:focus {
+    text-decoration: none;
+    color:#ffffff;
+}
 
-.button_saiba_mais:hover,
-.button_saiba_mais:focus {
+.botao:hover,
+.botao:focus,
+.modoEscuro:hover,
+.modoEscuro:focus {
     background-color: #00928d;
-}
-
-.botaoDark:hover,
-.botaoDark:focus {
-    background-color: #00928d;
-}
-
-.botaoFont:hover,
-.botaoFont:focus {
-    background-color:#00928d;
-}
-
-.botaoLogin:hover,
-.botaoLogin:focus {
-    background-color:#00928d;
+    color: #ffffff;
 }
 
 .footer {
     margin-top: 100px;
-    background-color: #00CEC8;
+    background-color: #FFFFFF;
     width: 1440px;
     height: 400px;
 }
+
+#senac {
+    display: flex;
+    flex-direction: row;
+    background-color: #00CEC8;
+    width: 1440px;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+
+#governoLogo {
+    width: 150px;
+    height: 100px;
+}
+
+#senacLogo {
+    width: 110px;
+    height: 65px;
+}
+
+#localizacao {
+    display: flex;
+    width: 1440px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#localizacaoImagem{
+    margin-right: 10px;
+}
+

@@ -7,23 +7,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/assets/css/reset.css">
-    <link rel="stylesheet" href="../src/assets/css/detalhes.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="../src/assets/css/index.css">
+    <link rel="stylesheet" href="../src/assets/css/dark-mode.css">
+    <script src="../src/assets/js/script.js" defer></script>
     <title>Meu acompanhante seguro - detalhes</title>
 </head>
 
 <body>
     <header>
-        <nav id="user-options">
-            <button class="botaoLogin">LOGIN</button>
-            <button class="botaoDark">DARK</button>
-            <button class="botaoFont">FONT</button>
+        <nav  id="opcoesUsuarios">
+            <button class="botao">LOGIN</button>
+            <button class="modoEscuro" id="modoEscuro">MODO ESCURO</button>
+            <button class="botao">FONTE</button>
         </nav>
-        <div id="cabecalho">
+        <div class="cabecalho">
             <figure>
-                <img id="medico-homem" src="./assets/image/medico-homem.png" alt="Médico Homem">
+                <img id="medicoHomem" src="./assets/image/medico-homem.png" alt="Médico Homem">
             </figure>
-            <section id="titulo">
+            <section class="titulo" id="titulo">
                 <h2><span>MEU</span> ACOMPANHANTE SEGURO</h2>   
             </section>
             <figure>
@@ -32,8 +33,8 @@
         </div>
     </header>
 
-    <aside class="titulo-orientacoes">
-        <h2>Sinalização e delimitação de áreas de isolamento</h2>
+    <aside class="tituloOrientacoes">
+        <h2>Sinalização áreas de isolamento</h2>
         <p>No ambiente hospitalar, onde há exposição a agentes biológicos, químicos e físicos, o uso adequado de Equipamentos de Proteção Individual (EPIs) é vital. Abordaremos a importância de proteger-se contra esses riscos e como os EPIs desempenham um papel crucial na segurança dos profissionais de saúde.</p>
     </aside>
 
@@ -41,50 +42,68 @@
 
     <section class="orientacoes">
         <main>
-        <div class="orientacoes-texto">
+        <div class="orientacoesTexto">
             <h2>primeiro passo</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil alias eius repudiandae dolore suscipit tempore distinctio, eligendi perferendis illo sunt asperiores omnis perspiciatis expedita hic blanditiis, earum est fugit nostrum?</p>
         </div>
     </main>
-        <figure class="figure-orientacoes">
+        <figure class="imagemOrientacoes">
             <img src="../src/assets/image/test-nurse.jpg" alt="Orientações">
         </figure>
     </section>
 
     <section class="orientacoes">
-        <div class="orientacoes-texto">
+        <div class="orientacoesTexto">
             <h2>segundo passo</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime sed dolorem accusamus quas laudantium ex soluta esse perferendis cumque voluptate, omnis atque voluptas voluptates possimus ab, minima inventore vel reiciendis.</p>
         </div>
-        <figure class="figure-orientacoes">
+        <figure class="imagemOrientacoes">
             <img src="../src/assets/image/test-nurse.jpg" alt="Orientações">
         </figure>
     </section>
 
     <section class="orientacoes">
-        <div class="orientacoes-texto">
+        <div class="orientacoesTexto">
             <h2>terceiro passo</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sed consequuntur. Temporibus deleniti quibusdam repellat? Cupiditate provident recusandae suscipit iusto repellat velit. Facere asperiores veniam perferendis repudiandae vero tenetur ab!</p>
         </div>
-        <figure class="figure-orientacoes">
+        <figure class="imagemOrientacoes">
             <img src="../src/assets/image/test-nurse.jpg" alt="Orientações">
         </figure>
     </section>
 
     <section class="orientacoes">
-        <div class="orientacoes-texto">
+        <div class="orientacoesTexto">
             <h2>quarto passo</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum at dolores, nesciunt amet animi ea sequi! Impedit architecto sunt totam tempore, illo dolores laboriosam facilis voluptatum laudantium consequuntur excepturi ducimus!</p>
         </div>
-        <figure class="figure-orientacoes">
+        <figure class="imagemOrientacoes">
             <img src="../src/assets/image/test-nurse.jpg" alt="Orientações">
         </figure>
     </section>
 
-    <!-- Repetição das seções, se necessário -->
     <footer class="footer">
-        <!-- Conteúdo do footer -->
+        <div class="senac" id="senac">
+            <a href="https://www.rn.senac.br/" target="_blank">
+                <figure >
+                    <img id="senacLogo" src="../src/assets/image/senac_logo.png" alt="">
+                </figure>
+            </a>
+        </div>
+        <a href="https://www.rn.gov.br/" target="_blank">
+            <figure>
+                <img id="governoLogo" src="../src/assets/image/logo-governo-do-estado.png" alt="">
+            </figure>
+        </a>
+        <div id="localizacao">
+            <a href="https://www.google.com/maps/place/Hospital+do+Santa+Catarina+(Dr.+Jos%C3%A9+Pedro+Bezerra)/@-5.7538939,-35.2560288,15z/data=!4m2!3m1!1s0x0:0x2fdce5fe2acf05d6?sa=X&ved=1t:2428&ictx=111" target="_blank">
+                <figure>
+                    <img src="../src/assets/image/localizacao.png" id="localizacaoImagem" alt="">
+                </figure>
+            </a>
+        
+            <p>R. Araquari, s/n - Potengi, Natal - RN <br> CEP: 59110-390 | TELEFONE: (84) 32327831</p>
+        </div>
     </footer>
 </body>
-
 </html>
