@@ -197,7 +197,11 @@ a:focus {
 }
 
 .botao:hover,
-.botao:focus,
+.botao:focus {
+    background-color: #00928d;
+    color: #ffffff;
+}
+
 .modoEscuro:hover,
 .modoEscuro:focus {
     background-color: #00928d;
