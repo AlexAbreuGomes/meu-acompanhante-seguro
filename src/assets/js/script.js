@@ -7,4 +7,13 @@ modoEscuro.addEventListener('click', ()=>{
     console.log('botao clicado')
 });
 
+let botaoMaisFonte = document.getElementById('fonte-mais')
+let botaoMenosFonte = document.getElementById('fonte-menos')
 
+botaoMaisFonte.addEventListener('click', function() {
+    document.body.style.fontSize = '130%'
+})
+
+botaoMenosFonte.addEventListener('click', function() {
+    document.body.style.fontSize = '100%'
+})
