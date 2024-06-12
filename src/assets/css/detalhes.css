@@ -187,3 +187,48 @@ body {
     height: 400px;
     margin-top: 100px;
 }
+
+@media screen and (max-width: 360px) {
+
+#opcoesUsuarios {
+    display: flex;
+    flex-direction:row-reverse;
+    align-items:end;
+    height: 65px;
+    width: 360px;        
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00CEC8;
+    height:150px;
+    width: 350px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 10px;
+    border-radius: 20px;    
+}
+
+.cabecalho img {  
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    image-rendering: auto;
+}
+
+#prancheta {
+    display: none;
+}
+
+.titulo {      
+    flex-direction: center;                         
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+}
