@@ -44,7 +44,7 @@ body {
     align-items: center;
     justify-content: center;
     line-height: 1.10;
-    font-size: 3em;
+    font-size: 3Rem;
     color: #FFFFFF;
     text-align: center;
 }
@@ -105,14 +105,14 @@ body {
 }
 
 .tituloOrientacoes h2 {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 800;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px #ffffff;
 }
 
 .tituloOrientacoes p {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 500;
     text-align: justify;
     line-height: 1.1;

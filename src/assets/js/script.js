@@ -7,41 +7,6 @@ modoEscuro.addEventListener('click', ()=>{
     console.log('botao clicado')
 });
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     let synth = window.speechSynthesis;
-//     let isSpeaking = false;
-//     let currentUtterance = null;
-
-//     let playPauseButtons = document.querySelectorAll('.playPauseBtn');
-
-//     playPauseButtons.forEach(button => {
-//         button.addEventListener('click', function() {
-//             if (isSpeaking) {
-//                 synth.cancel();
-//                 playPauseButtons.forEach(btn => btn.textContent = 'Play');
-//                 isSpeaking = false;
-//             } else {
-//                 let aviso = button.closest('.aviso') || button.closest('.orientacoesTexto') || button.closest('titulo-login');
-//                 let texto = aviso.innerText || aviso.textContent 
-//                 narrarTexto(texto, button);
-//             }
-//         });
-//     });
-
-//     function narrarTexto(texto, button) {
-//         let utterance = new SpeechSynthesisUtterance(texto);
-//         utterance.lang = 'pt-BR';
-//         utterance.onend = function() {
-//             button.textContent = 'Play';
-//             isSpeaking = false;
-//         };
-//         synth.speak(utterance);
-//         button.textContent = 'Pause';
-//         isSpeaking = true;
-//         currentUtterance = utterance;
-//     }
-// });
-
 document.addEventListener("DOMContentLoaded", function() {
     let synth = window.speechSynthesis;
     let isSpeaking = false;
@@ -80,4 +45,17 @@ document.addEventListener("DOMContentLoaded", function() {
         currentUtterance = utterance;
     }
 });
+
+let botaoMaisFonte = document.getElementById('fonteMais')
+let botaoMenosFonte = document.getElementById('fonteMenos')
+
+botaoMaisFonte.addEventListener('click', function() {
+    document.body.style.fontSize = '130%'
+})
+
+botaoMenosFonte.addEventListener('click', function() {
+    document.body.style.fontSize = '100%'
+})
+
+
 
