@@ -53,18 +53,37 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 40px 0 40px;
+    align-items: center; /* Centraliza verticalmente */
+    margin: 40px 0;
     background-color: #00CEC8;
     height: 250px;
-    width: 1320px;
+    width: 1320px; /* Ajuste conforme necessário */
     border-radius: 20px;
+    padding-top: 40px;
+    position: relative; /* Adicionado para posicionar o botão Play */
+}
+
+.avisoTexto {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 0px; /* Espaçamento abaixo do texto */
+}
+
+.playPauseBtn {
+    position: absolute;
+    bottom: 10px; /* Distância do fundo */
+    right: 10px; /* Distância da direita */
+    background-color: #ffffff;
+    color: #00CEC8;
+    padding: 10px 10px;
+    font-size: 1em;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
 }
 
 .aviso h2 {
     line-height: 1;
-    text-align: center;
-    font-size: 3em;
+    font-size: 3em; /* Reduzi o tamanho do texto para caber melhor */
     font-weight: 800;
     text-shadow: 2px 2px 4px #ffffff;
 } 
@@ -78,10 +97,11 @@ body {
     width: 1320px;
     background-color: #00CEC8;
     color: #077262;
-    margin: 40px 0;
+    margin-top: 50px;
     margin-bottom: 50px;
     padding: 50px;
     border-radius: 20px;
+    position: relative; /* Adicionado para posicionar o botão Play */
 }
 
 .tituloOrientacoes h2 {
@@ -122,6 +142,7 @@ body {
     width: 660px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    position: relative; /* Adicionado para posicionar o botão Play */
 }
 
 .orientacoesTexto h2 {
@@ -176,14 +197,11 @@ body {
     width: 1320px;
     height: 500px;
     border-radius: 20px;
-
-
 }
-
 
 .botao,
 .modoEscuro {
-    display: flex;
+    display: inline-block; /* Para ficar um abaixo do outro */
     align-items: center;
     justify-content: center;
     background-color:#ffffff ;
@@ -196,7 +214,7 @@ body {
     height: 40px;
     width: 150px;
     line-height: 1.1;
-    margin: 30px;
+    margin-top: 30px;
     text-align: center;
     text-decoration: none;
     transition: color 100ms;
@@ -388,7 +406,7 @@ a:focus {
         border-top-left-radius: 0px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        overflow-y: auto; 
+       
     }
 
     .orientacoesTexto h2 {
@@ -457,7 +475,7 @@ a:focus {
         height: 300px;
     }
 
-    #senac {
+    #linkFooter {
         display: flex;
         flex-direction: row;
         background-color: #00CEC8;
@@ -696,9 +714,7 @@ a:focus {
         flex-wrap: nowrap;
     }
 
-    .senac {
-
-    }
+  
     
     #governoLogo {
         width: 150px;

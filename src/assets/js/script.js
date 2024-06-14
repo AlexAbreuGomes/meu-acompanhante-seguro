@@ -7,31 +7,77 @@ modoEscuro.addEventListener('click', ()=>{
     console.log('botao clicado')
 });
 
-let isSpeaking = false;
-let utterance;
+// document.addEventListener("DOMContentLoaded", function() {
+//     let synth = window.speechSynthesis;
+//     let isSpeaking = false;
+//     let currentUtterance = null;
 
-function lerTexto(idSecao) {
-    if (isSpeaking) {
-        speechSynthesis.cancel();
-        isSpeaking = false;
-    } else {
-        let textoElement;
-        if (idSecao === 'aviso') {
-            textoElement = document.getElementById(idSecao).querySelector('h2').textContent;
-        } else {
-            textoElement = document.getElementById(idSecao).querySelector('.orientacoesTexto').textContent;
-        }
-        utterance = new SpeechSynthesisUtterance(textoElement);
-        speechSynthesis.speak(utterance);
-        isSpeaking = true;
-        utterance.onend = () => {
+//     let playPauseButtons = document.querySelectorAll('.playPauseBtn');
+
+//     playPauseButtons.forEach(button => {
+//         button.addEventListener('click', function() {
+//             if (isSpeaking) {
+//                 synth.cancel();
+//                 playPauseButtons.forEach(btn => btn.textContent = 'Play');
+//                 isSpeaking = false;
+//             } else {
+//                 let aviso = button.closest('.aviso') || button.closest('.orientacoesTexto') || button.closest('titulo-login');
+//                 let texto = aviso.innerText || aviso.textContent 
+//                 narrarTexto(texto, button);
+//             }
+//         });
+//     });
+
+//     function narrarTexto(texto, button) {
+//         let utterance = new SpeechSynthesisUtterance(texto);
+//         utterance.lang = 'pt-BR';
+//         utterance.onend = function() {
+//             button.textContent = 'Play';
+//             isSpeaking = false;
+//         };
+//         synth.speak(utterance);
+//         button.textContent = 'Pause';
+//         isSpeaking = true;
+//         currentUtterance = utterance;
+//     }
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+    let synth = window.speechSynthesis;
+    let isSpeaking = false;
+    let currentUtterance = null;
+
+    let playPauseButtons = document.querySelectorAll('.playPauseBtn');
+
+    playPauseButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            if (isSpeaking) {
+                synth.cancel();
+                playPauseButtons.forEach(btn => btn.textContent = 'Play');
+                isSpeaking = false;
+            } else {
+                let aviso = button.closest('.aviso') || 
+                            button.closest('.orientacoesTexto') || 
+                            button.closest('.login');
+                if (aviso) { // Verifica se o elemento foi encontrado
+                    let texto = aviso.innerText || aviso.textContent;
+                    narrarTexto(texto, button);
+                }
+            }
+        });
+    });
+
+    function narrarTexto(texto, button) {
+        let utterance = new SpeechSynthesisUtterance(texto);
+        utterance.lang = 'pt-BR';
+        utterance.onend = function() {
+            button.textContent = 'Play';
             isSpeaking = false;
         };
+        synth.speak(utterance);
+        button.textContent = 'Pause';
+        isSpeaking = true;
+        currentUtterance = utterance;
     }
-}
-   // Adiciona evento de clique às imagens de áudio
-document.getElementById('audio').addEventListener('click', () => lerTexto('aviso'));
-document.getElementById('audio02').addEventListener('click', () => lerTexto('texto01'));
-document.getElementById('audio03').addEventListener('click', () => lerTexto('texto02'));
-document.getElementById('audio04').addEventListener('click', () => lerTexto('texto03'));
-document.getElementById('audio05').addEventListener('click', () => lerTexto('texto04'));
+});
+
