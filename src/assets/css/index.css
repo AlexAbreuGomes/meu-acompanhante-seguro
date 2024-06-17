@@ -15,15 +15,62 @@ body {
 }
 
 #opcoesUsuarios {
-    align-items: center;
     display: flex;
-    height: 95px;
+    align-items: center;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+    height: 60px;
     width: 1440px;
+    
+   
+}
+
+.inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #fcffff;
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
     flex-direction: row-reverse;
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center;
+    background-color: #fcffff;
+    border-radius: 20px;
 }
 
 #opcoesUsuarios button {
     margin-left: 10px;
+}
+
+#botaoInicio {
+    height: 35px;
+    width: 35px;
+}
+
+#botaoDiminuir {
+    height: 40px;
+    width: 40px;
+}
+
+#botaoAumentar {
+    height: 45px;
+    width: 42px;
+}
+
+#botaoModoEscuro {
+    height: 35px;
+    width: 35px;
+}
+
+#botaoLogin {
+    height: 35px;
+    width: 35px;
 }
 
 .cabecalho {
@@ -138,10 +185,11 @@ body {
     font-weight: 800;
     padding: 0 50px;
     background-color: #00CEC8;
-    height: 360px;
+    height: 100%;
     width: 660px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    overflow: hidden; /* Oculta o texto que ultrapassa a área */
     position: relative; /* Adicionado para posicionar o botão Play */
 }
 
@@ -156,6 +204,11 @@ body {
     text-align: justify;
     font-size: 1em;
     margin: 10px;
+    overflow: hidden; /* Oculta o texto que ultrapassa a área */
+    text-overflow: ellipsis; /* Adiciona reticências ao final do texto */
+    display: -webkit-box; /* Flexbox para browsers webkit */
+    -webkit-line-clamp: 3; /* Número de linhas que deseja mostrar */
+    -webkit-box-orient: vertical; /* Define orientação vertical */
     text-shadow: 2px 2px 4px #ffffff;
 }
 
@@ -199,8 +252,8 @@ body {
     border-radius: 20px;
 }
 
-.botao,
-.modoEscuro {
+.botao
+ {
     display: inline-block; /* Para ficar um abaixo do outro */
     align-items: center;
     justify-content: center;
@@ -240,11 +293,11 @@ a:focus {
     color: #ffffff;
 }
 
-.modoEscuro:hover,
+/* .modoEscuro:hover,
 .modoEscuro:focus {
     background-color: #00928d;
     color: #ffffff;
-}
+} */
 
 .footer {
     margin-top: 100px;
@@ -667,6 +720,12 @@ a:focus {
     .imagemOrientacoes {
         max-width: 100%;
         object-fit: cover;
+    }
+
+    ion-icon {
+        font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+        color: #333; /* Cor do ícone */
+        /* Outros estilos conforme necessário */
     }
 
     .botao,
