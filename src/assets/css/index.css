@@ -20,8 +20,7 @@ body {
     justify-content: space-between; /* Adiciona espaço entre os itens */
     height: 60px;
     width: 1440px;
-    
-   
+    background: linear-gradient(to right, #00CEC8,#00bfba, #FFFFFF);
 }
 
 .inicio {
@@ -40,12 +39,10 @@ body {
     flex-direction: row-reverse;
     justify-content: center; /* Não é necessário, mas pode ser mantido */
     align-items: center;
-    background-color: #fcffff;
+    
     border-radius: 20px;
-}
+    gap: 5px; /* Adiciona espaçamento de 20px entre os botões */
 
-#opcoesUsuarios button {
-    margin-left: 10px;
 }
 
 #botaoInicio {
@@ -341,13 +338,60 @@ a:focus {
 
 @media screen and (max-width: 428px) {
     
-    #opcoesUsuarios {
-        display: flex;
-        flex-direction:row-reverse;
-        align-items:end;
-        height: 65px;
-        width: 428px;        
-    }
+#opcoesUsuarios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+    height: 60px;
+    width: 428px;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: #fcffff;
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center;
+    background-color: #fcffff;
+    border-radius: 20px;
+    gap: 5px; /* Adiciona espaçamento de 20px entre os botões */
+
+}
+
+#botaoInicio {
+    height: 30px;
+    width: 30px;
+}
+
+#botaoDiminuir {
+    height: 30px;
+    width: 30px;
+}
+
+#botaoAumentar {
+    height: 35px;
+    width: 30px;
+}
+
+#botaoModoEscuro {
+    height: 30px;
+    width: 30px;
+}
+
+#botaoLogin {
+    height: 30px;
+    width: 30px;
+}
 
     .cabecalho {
         display: flex;
@@ -387,13 +431,31 @@ a:focus {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 15px 0 15px;
+        margin: 40px 0;
         background-color: #00CEC8;
         height: 100px;
         width: 418px;
-        margin-left: 5px;
-        margin-right: 5px;
+        padding-top: 40px;
         border-radius: 20px;
+        position: relative; /* Adicionado para posicionar o botão Play */
+    }
+
+    .avisoTexto {
+        text-align: center; /* Centraliza o conteúdo */
+        margin-bottom: 0px; /* Espaçamento abaixo do texto */
+    }
+
+    .playPauseBtn {
+        position: absolute;
+        bottom: 5px; /* Distância do fundo */
+        right: 5px; /* Distância da direita */
+        background-color: #ffffff;
+        color: #00CEC8;
+        padding: 5px 5px;
+        font-size: 0.8em;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
     }
 
     .aviso h2 {
@@ -521,6 +583,27 @@ a:focus {
         touch-action: manipulation;
     }
 
+    .linkVideo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 418px;
+        height: 300px;
+        background-color: #00CEC8;
+        border-radius: 20px;
+    }
+    
+    .iframeVideo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 418px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
     .footer {
         margin-top: 100px;
         background-color: #FFFFFF;
@@ -570,10 +653,55 @@ a:focus {
 
     #opcoesUsuarios {
         display: flex;
-        flex-direction:row-reverse;
-        align-items:end;
-        height: 65px;
-        width: 360px;        
+        align-items: center;
+        justify-content: space-between; /* Adiciona espaço entre os itens */
+        height: 60px;
+        width: 360px;
+    }
+    .inicio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Não é necessário, mas pode ser mantido */
+        align-items: center;
+        height: 35px;
+        width: 35px;
+        background-color: #fcffff;
+        border-radius: 50%;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center; /* Não é necessário, mas pode ser mantido */
+        align-items: center;
+        background-color: #fcffff;
+        border-radius: 20px;
+        gap: 5px; /* Adiciona espaçamento de 20px entre os botões */
+    }
+    
+    #botaoInicio {
+        height: 25px;
+        width: 25px;
+    }
+    
+    #botaoDiminuir {
+        height: 30px;
+        width: 30px;
+    }
+    
+    #botaoAumentar {
+        height: 35px;
+        width: 30px;
+    }
+    
+    #botaoModoEscuro {
+        height: 30px;
+        width: 30px;
+    }
+    
+    #botaoLogin {
+        height: 30px;
+        width: 30px;
     }
 
     .cabecalho {
@@ -722,10 +850,298 @@ a:focus {
         object-fit: cover;
     }
 
-    ion-icon {
-        font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
-        color: #333; /* Cor do ícone */
-        /* Outros estilos conforme necessário */
+    .botao,
+    .modoEscuro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#ffffff ;
+        color: #00CEC8;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 0.6em;
+        height: 20px;
+        width: 60px;
+        line-height: 1.1;
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        text-decoration: none;
+        transition: color 100ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .linkVideo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 360px;
+        height: 300px;
+        background-color: #00CEC8;
+        border-radius: 20px;
+    }
+    
+    .iframeVideo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .footer {
+        margin-top: 100px;
+        background-color: #FFFFFF;
+        width: 428px;
+        height: 300px;
+    }
+    
+    #senac {
+        display: flex;
+        flex-direction: row;
+        background-color: #00CEC8;
+        width: 428px;
+        height: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    #governoLogo {
+        width: 150px;
+        height: 100px;
+    }
+    
+    #senacLogo {
+        width: 110px;
+        height: 65px;
+    }
+    
+    #localizacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 428px;
+        height:50%;
+    }
+    #localizacao {
+        font-size: 0.9em;
+        font-weight: 700;
+    }
+    
+    #localizacaoImagem{
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #opcoesUsuarios {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Adiciona espaço entre os itens */
+        height: 60px;
+        width: 320px;
+    }
+    .inicio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Não é necessário, mas pode ser mantido */
+        align-items: center;
+        height: 35px;
+        width: 35px;
+        background-color: #fcffff;
+        border-radius: 50%;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center; /* Não é necessário, mas pode ser mantido */
+        align-items: center;
+        background-color: #fcffff;
+        border-radius: 20px;
+        gap: 5px; /* Adiciona espaçamento de 20px entre os botões */
+    }
+    
+    #botaoInicio {
+        height: 25px;
+        width: 25px;
+    }
+    
+    #botaoDiminuir {
+        height: 30px;
+        width: 30px;
+    }
+    
+    #botaoAumentar {
+        height: 35px;
+        width: 30px;
+    }
+    
+    #botaoModoEscuro {
+        height: 30px;
+        width: 30px;
+    }
+    
+    #botaoLogin {
+        height: 30px;
+        width: 30px;
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        background-color: #00CEC8;
+        height:150px;
+        width: 320px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-right: 10px;
+        border-radius: 20px;
+    }
+    
+    .cabecalho img {  
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        image-rendering: auto;
+    }
+
+    #prancheta {
+        display: none;
+    }
+    
+    .titulo {      
+        flex-direction: center;                         
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .aviso {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0 15px;
+        background-color: #00CEC8;
+        height: 100px;
+        width: 320px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 20px;
+    }
+
+    .aviso h2 {
+        line-height: 1;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 800;
+        text-shadow: 1px 1px 2px #ffffff;
+    }
+
+    .tituloOrientacoes {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        height: 100%;
+        width: 320px;
+        background-color: #00CEC8;
+        color: #077262;
+        margin: 10px 0;
+        margin-bottom: 10px;
+        padding: 50px;
+        border-radius: 20px;
+    }
+    
+    .tituloOrientacoes h2 {
+        font-size: 1.1rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px #ffffff;
+    }
+    
+    .tituloOrientacoes p {
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .orientacoes {
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+        min-height: 500px;
+        width: 320px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        
+    }
+    
+    .orientacoesTexto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        font-weight: 800;
+        padding: 10px;
+        background-color: #00CEC8;
+        min-height: 50%; 
+        width: 320px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    .orientacoesTexto h2 {
+        text-align: justify;
+        font-size: 1em;
+        margin: 5px;
+        text-shadow: 1px 1px 2px #ffffff;
+    }
+    
+    .orientacoesTexto p {
+        text-align: justify;
+        font-size: 0.6em;
+        margin: 10px;
+        text-shadow: 1px 1px 2px #ffffff;
+    }
+    
+    .imagemOrientacoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50%;
+        width: 320px;
+        margin: 0;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 0px;
+        overflow: hidden;
+    }
+
+    .imagemOrientacoes {
+        max-width: 100%;
+        object-fit: cover;
     }
 
     .botao,
@@ -755,10 +1171,31 @@ a:focus {
         touch-action: manipulation;
     }
 
+    .linkVideo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 320px;
+        height: 300px;
+        background-color: #00CEC8;
+        border-radius: 20px;
+    }
+    
+    .iframeVideo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
     .footer {
         margin-top: 100px;
         background-color: #FFFFFF;
-        width: 428px;
+        width: 320px;
         height: 300px;
     }
     
@@ -766,15 +1203,13 @@ a:focus {
         display: flex;
         flex-direction: row;
         background-color: #00CEC8;
-        width: 428px;
+        width: 320px;
         height: 50%;
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: nowrap;
     }
 
-  
-    
     #governoLogo {
         width: 150px;
         height: 100px;
@@ -789,7 +1224,7 @@ a:focus {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 428px;
+        width: 320px;
         height:50%;
     }
     #localizacao {
