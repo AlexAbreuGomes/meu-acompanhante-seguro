@@ -8,12 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
         body.classList.add('dark');
     }
 
+    // Alterna a classe 'dark' no body ao clicar no botão
     toggleDarkModeButton.addEventListener('click', () => {
-        // Alterna a classe 'dark' no body ao clicar no botão
-        body.classList.toggle('dark');
-
-        // Salva o estado do modo escuro no localStorage
-        if (body.classList.contains('dark')) {
+        if (localStorage.getItem('modoEscuro') === 'false') {
             localStorage.setItem('modoEscuro', 'true');
         } else {
             localStorage.setItem('modoEscuro', 'false');
@@ -30,9 +27,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     playPauseButtons.forEach(button => {
         button.addEventListener('click', function() {
+            let img = button.querySelector('.playPauseIcon');
             if (isSpeaking) {
                 synth.cancel();
-                playPauseButtons.forEach(btn => btn.textContent = 'Ouvir');
+                playPauseButtons.forEach(btn => {
+                    let icon = btn.querySelector('.playPauseIcon');
+                    icon.src = "../src/assets/image/sound-on-svgrepo-com.svg";
+                });
                 isSpeaking = false;
             } else {
                 let aviso = button.closest('.aviso') || 
@@ -40,25 +41,33 @@ document.addEventListener("DOMContentLoaded", function() {
                             button.closest('.tituloOrientacoes');
                 if (aviso) { // Verifica se o elemento foi encontrado
                     let texto = aviso.innerText || aviso.textContent;
-                    narrarTexto(texto, button);
+                    narrarTexto(texto, img);
                 }
             }
-        });
+        }); 
     });
 
-    function narrarTexto(texto, button) {
+    function narrarTexto(texto, img) {
+        if (currentUtterance) {
+            synth.cancel(); // Cancela a fala atual se houver uma em andamento
+        }
         let utterance = new SpeechSynthesisUtterance(texto);
         utterance.lang = 'pt-BR';
         utterance.onend = function() {
-            button.textContent = 'Ouvir';
+            img.src = "../src/assets/image/sound-on-svgrepo-com.svg";
+            isSpeaking = false;
+        };
+        utterance.onerror = function() { // Adicionado para tratar possíveis erros
+            img.src = "../src/assets/image/sound-on-svgrepo-com.svg";
             isSpeaking = false;
         };
         synth.speak(utterance);
-        button.textContent = 'Parar';
+        img.src = "../src/assets/image/sound-off-svgrepo-com.svg";
         isSpeaking = true;
         currentUtterance = utterance;
     }
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const botaoMaisFonte = document.getElementById('fonteMais');

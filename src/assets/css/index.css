@@ -1,85 +1,431 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(../image/1282794.jpg);
-    background-size:cover;
-    image-rendering: auto;
-    background-position: center;    
-    font-family: 'Poppins', sans-serif;
-    color: #077262;
-    transition: .5s;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../image/1282794.jpg);
+  background-size: cover;
+  image-rendering: auto;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  color: #077262;
+  transition: s;
 }
 
 #opcoesUsuarios {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adiciona espaço entre os itens */
-    height: 60px;
-    width: 1440px;
-    background: linear-gradient(to right, #00CEC8,#00bfba, #FFFFFF);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adiciona espaço entre os itens */
+  height: 60px;
+  width: 1440px;
+  padding: 0 20px; /* Espaçamento interno para melhor aparência */
 }
 
 .inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Não é necessário, mas pode ser mantido */
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #fcffff;
+  border-radius: 50%;
+}
+
+.inicio a {
+  display: flex;
+  align-items: center;
+  width: 30px; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+  height: 30px; /* Mudança: Manter a proporção da imagem */
+}
+
+.inicio img {
+  width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+  height: auto; /* Mudança: Manter a proporção da imagem */
+}
+
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; /* Não é necessário, mas pode ser mantido */
+  align-items: center; /* Mudança: Alinhar itens verticalmente */
+  height: 50px;
+  width: 130px;
+  background-color: #fcffff;
+  border-radius: 40px;
+}
+
+.menu a {
+  display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+  justify-content: center; /* Mudança: Centralizar horizontalmente */
+  align-items: center; /* Mudança: Centralizar verticalmente */
+  width: 30px; /* Mudança: Largura fixa */
+  height: 30px; /* Mudança: Altura fixa */
+}
+
+.menu img {
+  width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+  height: auto; /* Mudança: Manter a proporção da imagem */
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00bfba;
+  height: 400px;
+  width: 1440px;
+}
+
+.cabecalho img {
+  height: 100%;
+}
+
+.titulo {
+  flex-direction: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.aviso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centraliza verticalmente */
+  margin: 40px 0;
+  background-color: #00bfba;
+  height: 250px;
+  width: 1320px; /* Ajuste conforme necessário */
+  border-radius: 20px;
+  position: relative; /* Adicionado para posicionar o botão Play */
+}
+
+.avisoTexto {
+  text-align: center; /* Centraliza o conteúdo */
+  margin-bottom: 0px; /* Espaçamento abaixo do texto */
+}
+
+.playPauseBtn {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  bottom: 10px; /* Distância do fundo */
+  right: 10px; /* Distância da direita */
+  background-color: #ffffff;
+  color: #00bfba;
+  border: none;
+  cursor: pointer;
+  background-color: #fcffff;
+  border-radius: 50%;
+}
+
+.playPauseBtn a {
+  display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+  justify-content: center; /* Mudança: Centralizar horizontalmente */
+  align-items: center; /* Mudança: Centralizar verticalmente */
+}
+
+.playPauseBtn img {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+  height: 40px; /* Mudança: Manter a proporção da imagem */
+}
+
+.aviso h2 {
+  line-height: 1;
+  font-size: 3em; /* Reduzi o tamanho do texto para caber melhor */
+  font-weight: 800;
+}
+
+.tituloOrientacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 1320px;
+  background-color: #00cec8;
+  color: #077262;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+  border-radius: 20px;
+  position: relative; /* Adicionado para posicionar o botão Play */
+}
+
+.tituloOrientacoes h2 {
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #ffffff;
+}
+
+.tituloOrientacoes p {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.orientacoes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 360px;
+  width: 1320px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+.orientacoesTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-weight: 800;
+  padding: 0 50px;
+  background-color: #00bfba;
+  height: 100%;
+  width: 660px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden; /* Oculta o texto que ultrapassa a área */
+  position: relative; /* Adicionado para posicionar o botão Play */
+}
+
+.orientacoesTexto h2 {
+  text-align: justify;
+  font-size: 1.75em;
+  margin: 10px;
+  text-shadow: 2px 2px 4px #00d8d1;
+}
+
+.orientacoesTexto p {
+  text-align: justify;
+  font-size: 1.2em;
+  margin: 10px;
+  overflow: hidden; /* Oculta o texto que ultrapassa a área */
+  text-overflow: ellipsis; /* Adiciona reticências ao final do texto */
+  display: -webkit-box; /* Flexbox para browsers webkit */
+  -webkit-line-clamp: 3; /* Número de linhas que deseja mostrar */
+  -webkit-box-orient: vertical; /* Define orientação vertical */
+  text-shadow: 2px 2px 4px #00d8d1;
+}
+
+.imagemOrientacoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 360px;
+  width: 660px;
+  margin: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.imagemOrientacoes img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Redimensiona a imagem para caber na div sem cortar */
+}
+
+.linkVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1320px;
+  height: 500px;
+  background-color: #00bfba;
+  border-radius: 20px;
+}
+
+.iframeVideo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1320px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.botao {
+  display: inline-block; /* Para ficar um abaixo do outro */
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #00bfba;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  height: 40px;
+  width: 150px;
+  line-height: 1.1;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+a {
+  text-decoration: none;
+  color: #040c0c;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.botao:hover,
+.botao:focus {
+  background-color: #00928d;
+  color: #ffffff;
+}
+
+/* .modoEscuro:hover,
+.modoEscuro:focus {
+    background-color: #00928d;
+    color: #ffffff;
+} */
+
+.footer {
+  margin-top: 100px;
+  background-color: #ffffff;
+  width: 1440px;
+  height: 400px;
+}
+
+#linkFooter {
+  display: flex;
+  flex-direction: row;
+  background-color: #00cec8;
+  width: 1440px;
+  height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+#governoLogo {
+  width: 150px;
+  height: 100px;
+}
+
+#senacLogo {
+  width: 110px;
+  height: 65px;
+}
+
+#localizacao {
+  display: flex;
+  width: 1440px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+#localizacaoImagem {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 428px) {
+
+  #opcoesUsuarios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+    width: 418px;
+    height: 60px;
+    padding: 0 20px; /* Espaçamento interno para melhor aparência */
+  }
+
+  .inicio {
     display: flex;
     flex-direction: row;
     justify-content: center; /* Não é necessário, mas pode ser mantido */
     align-items: center;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     background-color: #fcffff;
     border-radius: 50%;
-}
-
-.menu {
+  }
+  
+  .inicio a {
+    display: flex;
+    align-items: center;
+    width: 25px; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 25px; /* Mudança: Manter a proporção da imagem */
+  }
+  
+  .inicio img {
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
+  }
+  
+  .menu {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center; /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    
-    border-radius: 20px;
-    gap: 5px; /* Adiciona espaçamento de 20px entre os botões */
-
-}
-
-#botaoInicio {
+    align-items: center; /* Mudança: Alinhar itens verticalmente */
     height: 35px;
-    width: 35px;
-}
-
-#botaoDiminuir {
-    height: 40px;
-    width: 40px;
-}
-
-#botaoAumentar {
-    height: 45px;
-    width: 42px;
-}
-
-#botaoModoEscuro {
-    height: 35px;
-    width: 35px;
-}
-
-#botaoLogin {
-    height: 35px;
-    width: 35px;
-}
-
-.cabecalho {
+    width: 100px;
+    background-color: #fcffff;
+    border-radius: 40px;
+  }
+  
+  .menu a {
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
+    width: 25px; /* Mudança: Largura fixa */
+    height: 25px; /* Mudança: Altura fixa */
+  }
+  
+  .menu img {
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
+  }
+  
+  .cabecalho {
     display: flex;
     justify-content: space-between;
     background-color: #00CEC8;
-    height: 400px;
-    width: 1440px;
+    height:100px;
+    width: 418px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 0px;
+    border-radius: 20px;
 }
 
-.cabecalho img {
+.cabecalho img { 
     height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    image-rendering: auto;
+}
+
+#prancheta {
+    display: none;
 }
 
 .titulo {      
@@ -87,76 +433,90 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 1.10;
-    font-size: 3Rem;
+    font-size: 0.9em;
     color: #FFFFFF;
     text-align: center;
 }
-
-.aviso {
+  
+  .aviso {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; /* Centraliza verticalmente */
-    margin: 40px 0;
-    background-color: #00CEC8;
-    height: 250px;
-    width: 1320px; /* Ajuste conforme necessário */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin: 10px 0;
+    background-color: #00bfba;
+    height: 180px;
+    width: 418px; /* Ajuste conforme necessário */
     border-radius: 20px;
-    padding-top: 40px;
     position: relative; /* Adicionado para posicionar o botão Play */
-}
+  }
 
-.avisoTexto {
+  .aviso h2 {
+    line-height: 1;
+    font-size: 1.5em; /* Reduzi o tamanho do texto para caber melhor */
+    font-weight: 800;
+  }
+  
+  .avisoTexto {
     text-align: center; /* Centraliza o conteúdo */
     margin-bottom: 0px; /* Espaçamento abaixo do texto */
-}
+  }
 
-.playPauseBtn {
+  .playPauseBtn {
+    display: flex;
+    align-items: center;
+    justify-items: center;
     position: absolute;
-    bottom: 10px; /* Distância do fundo */
-    right: 10px; /* Distância da direita */
+    bottom: 5px; /* Distância do fundo */
+    right: 5px; /* Distância da direita */
     background-color: #ffffff;
-    color: #00CEC8;
-    padding: 10px 10px;
-    font-size: 1em;
-    border-radius: 50%;
+    color: #00bfba;
     border: none;
     cursor: pointer;
-}
-
-.aviso h2 {
-    line-height: 1;
-    font-size: 3em; /* Reduzi o tamanho do texto para caber melhor */
-    font-weight: 800;
-    text-shadow: 2px 2px 4px #ffffff;
-} 
-
-.tituloOrientacoes {
+    background-color: #fcffff;
+    border-radius: 50%;
+  }
+  
+  .playPauseBtn a {
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
+  }
+  
+  .playPauseBtn img {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 30px; /* Mudança: Manter a proporção da imagem */
+  }
+  
+  .tituloOrientacoes {
     display: flex;
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-    height:100%;
-    width: 1320px;
+    height: 100%;
+    width: 418px;
     background-color: #00CEC8;
     color: #077262;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 50px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    padding: 20px;
     border-radius: 20px;
-    position: relative; /* Adicionado para posicionar o botão Play */
 }
 
 .tituloOrientacoes h2 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 800;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px #ffffff;
 }
 
 .tituloOrientacoes p {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 500;
     text-align: justify;
     line-height: 1.1;
@@ -165,11 +525,10 @@ body {
 
 .orientacoes {
     display: flex;
-    flex-direction: row;
+    flex-direction:column-reverse;
     align-items: center;
-    height: 360px;
-    width: 1320px;
-    margin-bottom: 40px;
+    height:550px;
+    width: 418px;
     border-radius: 20px;
 }
 
@@ -180,184 +539,155 @@ body {
     align-items: center;
     text-align: justify;
     font-weight: 800;
-    padding: 0 50px;
-    background-color: #00CEC8;
-    height: 100%;
-    width: 660px;
-    border-top-left-radius: 20px;
+    padding: 10px;
+    background-color: #00CEC8; 
+    width: 418px;
+    height: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 0px;
     border-bottom-left-radius: 20px;
-    overflow: hidden; /* Oculta o texto que ultrapassa a área */
-    position: relative; /* Adicionado para posicionar o botão Play */
+    border-bottom-right-radius: 20px;
 }
 
 .orientacoesTexto h2 {
-    text-align: justify;
-    font-size: 1.75em;
-    margin: 10px;
-    text-shadow: 2px 2px 4px #ffffff;
+    text-align:center;
+    font-size: 1.5em;
+    margin: 5px;
+    text-shadow: 1px 1px 2px #ffffff;
 }
 
 .orientacoesTexto p {
-    text-align: justify;
-    font-size: 1em;
-    margin: 10px;
-    overflow: hidden; /* Oculta o texto que ultrapassa a área */
-    text-overflow: ellipsis; /* Adiciona reticências ao final do texto */
-    display: -webkit-box; /* Flexbox para browsers webkit */
-    -webkit-line-clamp: 3; /* Número de linhas que deseja mostrar */
-    -webkit-box-orient: vertical; /* Define orientação vertical */
-    text-shadow: 2px 2px 4px #ffffff;
+    text-align:justify;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px #ffffff;
 }
 
 .imagemOrientacoes {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 360px;
-    width: 660px;
+    height: 50%;
+    width: 418px;
     margin: 0;
     border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
     overflow: hidden;
 }
 
 .imagemOrientacoes {
-    width: auto;
-    height: 100%;
-    max-width: 50%;
+    max-width: 100%;
     object-fit: cover;
 }
 
 .linkVideo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 1320px;
-    height: 500px;
-    background-color: #00CEC8;
-    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 418px;
+  height: 400px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #00bfba;
+  border-radius: 20px;
 }
 
 .iframeVideo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 1320px;
-    height: 500px;
-    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 418px;
+  height: 400px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 20px;
 }
 
-.botao
- {
-    display: inline-block; /* Para ficar um abaixo do outro */
-    align-items: center;
-    justify-content: center;
-    background-color:#ffffff ;
-    color: #00CEC8;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.8em;
-    height: 40px;
-    width: 150px;
-    line-height: 1.1;
-    margin-top: 30px;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+.botao {
+  display: inline-block; /* Para ficar um abaixo do outro */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #077262;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7em;
+  font-weight: 800;
+  height: 30px;
+  width: 100px;
+  line-height: 1.1;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: color 100ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
-
-a {
-    text-decoration: none;
-    color:#00928d; 
-}
-
-a:hover,
-a:focus {
-    text-decoration: none;
-    color:#ffffff;
-}
-
-.botao:hover,
-.botao:focus {
-    background-color: #00928d;
-    color: #ffffff;
-}
-
-/* .modoEscuro:hover,
-.modoEscuro:focus {
-    background-color: #00928d;
-    color: #ffffff;
-} */
-
-.footer {
-    margin-top: 100px;
-    background-color: #FFFFFF;
-    width: 1440px;
-    height: 400px;
-}
-
-#linkFooter {
+  
+  .linkFooter {
     display: flex;
     flex-direction: row;
-    background-color: #00CEC8;
-    width: 1440px;
-    height: 200px;
+    background-color: #00cec8;
+    width: 418px;
+    height: 300px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: nowrap;
-}
+  }
 
-#governoLogo {
+  #governoLogo {
     width: 150px;
     height: 100px;
-}
+  }
 
-#senacLogo {
+  #senacLogo {
     width: 110px;
     height: 65px;
-}
+  }
 
-#localizacao {
+  #localizacao {
     display: flex;
-    width: 1440px;
-    height: 200px;
     justify-content: center;
     align-items: center;
+    width: 428px;
+    height: 50%;
+  }
+  #localizacao {
+    font-size: 0.9em;
+    font-weight: 700;
+  }
+
+  #localizacaoImagem {
+    margin-right: 5px;
+  }
 }
 
-#localizacaoImagem{
-    margin-right: 10px;
-}
-
-@media screen and (max-width: 428px) {
-    
-#opcoesUsuarios {
+@media screen and (max-width: 360px) {
+  #opcoesUsuarios {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Adiciona espaço entre os itens */
     height: 60px;
-    width: 428px;
-}
-
-.inicio {
+    width: 360px;
+  }
+  .inicio {
     display: flex;
     flex-direction: row;
     justify-content: center; /* Não é necessário, mas pode ser mantido */
     align-items: center;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     background-color: #fcffff;
     border-radius: 50%;
-}
+  }
 
-.menu {
+  .menu {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center; /* Não é necessário, mas pode ser mantido */
@@ -365,876 +695,559 @@ a:focus {
     background-color: #fcffff;
     border-radius: 20px;
     gap: 5px; /* Adiciona espaçamento de 20px entre os botões */
+  }
 
-}
+  #botaoInicio {
+    height: 25px;
+    width: 25px;
+  }
 
-#botaoInicio {
+  #botaoDiminuir {
     height: 30px;
     width: 30px;
-}
+  }
 
-#botaoDiminuir {
-    height: 30px;
-    width: 30px;
-}
-
-#botaoAumentar {
+  #botaoAumentar {
     height: 35px;
     width: 30px;
-}
+  }
 
-#botaoModoEscuro {
+  #botaoModoEscuro {
     height: 30px;
     width: 30px;
-}
+  }
 
-#botaoLogin {
+  #botaoLogin {
     height: 30px;
     width: 30px;
-}
+  }
 
-    .cabecalho {
-        display: flex;
-        justify-content: space-between;
-        background-color: #00CEC8;
-        height:150px;
-        width: 418px;
-        margin-left: 5px;
-        margin-right: 5px;
-        padding-right: 10px;
-        border-radius: 20px;
-    }
-    
-    .cabecalho img {  
-        height: 100%;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        image-rendering: auto;
-    }
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00cec8;
+    height: 150px;
+    width: 350px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 10px;
+    border-radius: 20px;
+  }
 
-    #prancheta {
-        display: none;
-    }
-    
-    .titulo {      
-        flex-direction: center;                         
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1em;
-        color: #FFFFFF;
-        text-align: center;
-    }
+  .cabecalho img {
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    image-rendering: auto;
+  }
 
-    .aviso {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 40px 0;
-        background-color: #00CEC8;
-        height: 100px;
-        width: 418px;
-        padding-top: 40px;
-        border-radius: 20px;
-        position: relative; /* Adicionado para posicionar o botão Play */
-    }
+  #prancheta {
+    display: none;
+  }
 
-    .avisoTexto {
-        text-align: center; /* Centraliza o conteúdo */
-        margin-bottom: 0px; /* Espaçamento abaixo do texto */
-    }
+  .titulo {
+    flex-direction: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+  }
 
-    .playPauseBtn {
-        position: absolute;
-        bottom: 5px; /* Distância do fundo */
-        right: 5px; /* Distância da direita */
-        background-color: #ffffff;
-        color: #00CEC8;
-        padding: 5px 5px;
-        font-size: 0.8em;
-        border-radius: 50%;
-        border: none;
-        cursor: pointer;
-    }
+  .aviso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px;
+    background-color: #00cec8;
+    height: 100px;
+    width: 350px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+  }
 
-    .aviso h2 {
-        line-height: 1;
-        text-align: center;
-        font-size: 1.2em;
-        font-weight: 800;
-        text-shadow: 1px 1px 2px #ffffff;
-    }
+  .aviso h2 {
+    line-height: 1;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px #ffffff;
+  }
 
-    .tituloOrientacoes {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        height: 100%;
-        width: 418px;
-        background-color: #00CEC8;
-        color: #077262;
-        margin: 10px 0;
-        margin-bottom: 10px;
-        padding: 50px;
-        border-radius: 20px;
-    }
-    
-    .tituloOrientacoes h2 {
-        font-size: 2em;
-        font-weight: 800;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 4px #ffffff;
-    }
-    
-    .tituloOrientacoes p {
-        font-size: 1em;
-        font-weight: 500;
-        text-align: justify;
-        line-height: 1.1;
-        margin-bottom: 20px;
-    }
+  .tituloOrientacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 350px;
+    background-color: #00cec8;
+    color: #077262;
+    margin: 10px 0;
+    margin-bottom: 10px;
+    padding: 50px;
+    border-radius: 20px;
+  }
 
-    .orientacoes {
-        display: flex;
-        flex-direction:column-reverse;
-        align-items: center;
-        min-height:500px;
-        width: 418px;
-        border-radius: 20px;
-       
-    }
-    
-    .orientacoesTexto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-        font-weight: 800;
-        padding: 10px;
-        background-color: #00CEC8; 
-        width: 418px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-       
-    }
+  .tituloOrientacoes h2 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #ffffff;
+  }
 
-    .orientacoesTexto h2 {
-        text-align:center;
-        font-size: 1.5em;
-        margin: 5px;
-        text-shadow: 1px 1px 2px #ffffff;
-    }
-    
-    .orientacoesTexto p {
-        text-align:justify;
-        font-size: 1em;
-        
-        text-shadow: 1px 1px 2px #ffffff;
-    }
-    
-    .imagemOrientacoes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50%;
-        width: 418px;
-        margin: 0;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 0px;
-        overflow: hidden;
-    }
+  .tituloOrientacoes p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
 
-    .imagemOrientacoes {
-        max-width: 100%;
-        object-fit: cover;
-    }
+  .orientacoes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    min-height: 500px;
+    width: 350px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
 
-    .botao,
-    .modoEscuro {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color:#ffffff ;
-        color: #00CEC8;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        font-size: 0.6em;
-        height: 20px;
-        width: 60px;
-        line-height: 1.1;
-        margin: 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-        text-decoration: none;
-        transition: color 100ms;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-    }
+  .orientacoesTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-weight: 800;
+    padding: 10px;
+    background-color: #00cec8;
+    min-height: 50%;
+    width: 350px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 
-    .linkVideo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 418px;
-        height: 300px;
-        background-color: #00CEC8;
-        border-radius: 20px;
-    }
-    
-    .iframeVideo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 418px;
-        height: 300px;
-        border-radius: 20px;
-    }
+  .orientacoesTexto h2 {
+    text-align: justify;
+    font-size: 1em;
+    margin: 5px;
+    text-shadow: 1px 1px 2px #ffffff;
+  }
 
-    .footer {
-        margin-top: 100px;
-        background-color: #FFFFFF;
-        width: 428px;
-        height: 300px;
-    }
+  .orientacoesTexto p {
+    text-align: justify;
+    font-size: 0.6em;
+    margin: 10px;
+    text-shadow: 1px 1px 2px #ffffff;
+  }
 
-    #linkFooter {
-        display: flex;
-        flex-direction: row;
-        background-color: #00CEC8;
-        width: 428px;
-        height: 50%;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-    }
-    
-    #governoLogo {
-        width: 150px;
-        height: 100px;
-    }
-    
-    #senacLogo {
-        width: 110px;
-        height: 65px;
-    }
+  .imagemOrientacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50%;
+    width: 350px;
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    overflow: hidden;
+  }
 
-    #localizacao {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 428px;
-        height:50%;
-    }
-    #localizacao {
-        font-size: 0.9em;
-        font-weight: 700;
-    }
-    
-    #localizacaoImagem{
-        margin-right: 5px;
-    }
-}
+  .imagemOrientacoes {
+    max-width: 100%;
+    object-fit: cover;
+  }
 
-@media screen and (max-width: 360px) {
+  .botao,
+  .modoEscuro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #00cec8;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.6em;
+    height: 20px;
+    width: 60px;
+    line-height: 1.1;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
 
-    #opcoesUsuarios {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; /* Adiciona espaço entre os itens */
-        height: 60px;
-        width: 360px;
-    }
-    .inicio {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; /* Não é necessário, mas pode ser mantido */
-        align-items: center;
-        height: 35px;
-        width: 35px;
-        background-color: #fcffff;
-        border-radius: 50%;
-    }
-    
-    .menu {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center; /* Não é necessário, mas pode ser mantido */
-        align-items: center;
-        background-color: #fcffff;
-        border-radius: 20px;
-        gap: 5px; /* Adiciona espaçamento de 20px entre os botões */
-    }
-    
-    #botaoInicio {
-        height: 25px;
-        width: 25px;
-    }
-    
-    #botaoDiminuir {
-        height: 30px;
-        width: 30px;
-    }
-    
-    #botaoAumentar {
-        height: 35px;
-        width: 30px;
-    }
-    
-    #botaoModoEscuro {
-        height: 30px;
-        width: 30px;
-    }
-    
-    #botaoLogin {
-        height: 30px;
-        width: 30px;
-    }
+  .linkVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 300px;
+    background-color: #00cec8;
+    border-radius: 20px;
+  }
 
-    .cabecalho {
-        display: flex;
-        justify-content: space-between;
-        background-color: #00CEC8;
-        height:150px;
-        width: 350px;
-        margin-left: 5px;
-        margin-right: 5px;
-        padding-right: 10px;
-        border-radius: 20px;
-    }
-    
-    .cabecalho img {  
-        height: 100%;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        image-rendering: auto;
-    }
+  .iframeVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 300px;
+    border-radius: 20px;
+  }
 
-    #prancheta {
-        display: none;
-    }
-    
-    .titulo {      
-        flex-direction: center;                         
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1em;
-        color: #FFFFFF;
-        text-align: center;
-    }
+  .footer {
+    margin-top: 100px;
+    background-color: #ffffff;
+    width: 428px;
+    height: 300px;
+  }
 
-    .aviso {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 15px 0 15px;
-        background-color: #00CEC8;
-        height: 100px;
-        width: 350px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border-radius: 20px;
-    }
+  #senac {
+    display: flex;
+    flex-direction: row;
+    background-color: #00cec8;
+    width: 428px;
+    height: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
 
-    .aviso h2 {
-        line-height: 1;
-        text-align: center;
-        font-size: 1.2em;
-        font-weight: 800;
-        text-shadow: 1px 1px 2px #ffffff;
-    }
+  #governoLogo {
+    width: 150px;
+    height: 100px;
+  }
 
-    .tituloOrientacoes {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        height: 100%;
-        width: 350px;
-        background-color: #00CEC8;
-        color: #077262;
-        margin: 10px 0;
-        margin-bottom: 10px;
-        padding: 50px;
-        border-radius: 20px;
-    }
-    
-    .tituloOrientacoes h2 {
-        font-size: 1.1rem;
-        font-weight: 800;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 4px #ffffff;
-    }
-    
-    .tituloOrientacoes p {
-        font-size: 0.8rem;
-        font-weight: 500;
-        text-align: justify;
-        line-height: 1.1;
-        margin-bottom: 20px;
-    }
+  #senacLogo {
+    width: 110px;
+    height: 65px;
+  }
 
-    .orientacoes {
-        display: flex;
-        flex-direction:column-reverse;
-        align-items: center;
-        min-height: 500px;
-        width: 350px;
-        margin-bottom: 10px;
-        border-radius: 20px;
-        
-    }
-    
-    .orientacoesTexto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-        font-weight: 800;
-        padding: 10px;
-        background-color: #00CEC8;
-        min-height: 50%; 
-        width: 350px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-    
-    .orientacoesTexto h2 {
-        text-align: justify;
-        font-size: 1em;
-        margin: 5px;
-        text-shadow: 1px 1px 2px #ffffff;
-    }
-    
-    .orientacoesTexto p {
-        text-align: justify;
-        font-size: 0.6em;
-        margin: 10px;
-        text-shadow: 1px 1px 2px #ffffff;
-    }
-    
-    .imagemOrientacoes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 50%;
-        width: 350px;
-        margin: 0;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 0px;
-        overflow: hidden;
-    }
+  #localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 428px;
+    height: 50%;
+  }
+  #localizacao {
+    font-size: 0.9em;
+    font-weight: 700;
+  }
 
-    .imagemOrientacoes {
-        max-width: 100%;
-        object-fit: cover;
-    }
-
-    .botao,
-    .modoEscuro {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color:#ffffff ;
-        color: #00CEC8;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        font-size: 0.6em;
-        height: 20px;
-        width: 60px;
-        line-height: 1.1;
-        margin: 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-        text-decoration: none;
-        transition: color 100ms;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-    }
-
-    .linkVideo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 360px;
-        height: 300px;
-        background-color: #00CEC8;
-        border-radius: 20px;
-    }
-    
-    .iframeVideo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 360px;
-        height: 300px;
-        border-radius: 20px;
-    }
-
-    .footer {
-        margin-top: 100px;
-        background-color: #FFFFFF;
-        width: 428px;
-        height: 300px;
-    }
-    
-    #senac {
-        display: flex;
-        flex-direction: row;
-        background-color: #00CEC8;
-        width: 428px;
-        height: 50%;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-    }
-
-    #governoLogo {
-        width: 150px;
-        height: 100px;
-    }
-    
-    #senacLogo {
-        width: 110px;
-        height: 65px;
-    }
-    
-    #localizacao {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 428px;
-        height:50%;
-    }
-    #localizacao {
-        font-size: 0.9em;
-        font-weight: 700;
-    }
-    
-    #localizacaoImagem{
-        margin-right: 5px;
-    }
+  #localizacaoImagem {
+    margin-right: 5px;
+  }
 }
 
 @media screen and (max-width: 320px) {
+  #opcoesUsuarios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+    height: 60px;
+    width: 320px;
+  }
+  .inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-color: #fcffff;
+    border-radius: 50%;
+  }
 
-    #opcoesUsuarios {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; /* Adiciona espaço entre os itens */
-        height: 60px;
-        width: 320px;
-    }
-    .inicio {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; /* Não é necessário, mas pode ser mantido */
-        align-items: center;
-        height: 35px;
-        width: 35px;
-        background-color: #fcffff;
-        border-radius: 50%;
-    }
-    
-    .menu {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center; /* Não é necessário, mas pode ser mantido */
-        align-items: center;
-        background-color: #fcffff;
-        border-radius: 20px;
-        gap: 5px; /* Adiciona espaçamento de 20px entre os botões */
-    }
-    
-    #botaoInicio {
-        height: 25px;
-        width: 25px;
-    }
-    
-    #botaoDiminuir {
-        height: 30px;
-        width: 30px;
-    }
-    
-    #botaoAumentar {
-        height: 35px;
-        width: 30px;
-    }
-    
-    #botaoModoEscuro {
-        height: 30px;
-        width: 30px;
-    }
-    
-    #botaoLogin {
-        height: 30px;
-        width: 30px;
-    }
+  .menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center;
+    background-color: #fcffff;
+    border-radius: 20px;
+    gap: 5px; /* Adiciona espaçamento de 20px entre os botões */
+  }
 
-    .cabecalho {
-        display: flex;
-        justify-content: space-between;
-        background-color: #00CEC8;
-        height:150px;
-        width: 320px;
-        margin-left: 5px;
-        margin-right: 5px;
-        padding-right: 10px;
-        border-radius: 20px;
-    }
-    
-    .cabecalho img {  
-        height: 100%;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        image-rendering: auto;
-    }
+  #botaoInicio {
+    height: 25px;
+    width: 25px;
+  }
 
-    #prancheta {
-        display: none;
-    }
-    
-    .titulo {      
-        flex-direction: center;                         
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1em;
-        color: #FFFFFF;
-        text-align: center;
-    }
+  #botaoDiminuir {
+    height: 30px;
+    width: 30px;
+  }
 
-    .aviso {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 15px 0 15px;
-        background-color: #00CEC8;
-        height: 100px;
-        width: 320px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border-radius: 20px;
-    }
+  #botaoAumentar {
+    height: 35px;
+    width: 30px;
+  }
 
-    .aviso h2 {
-        line-height: 1;
-        text-align: center;
-        font-size: 1.2em;
-        font-weight: 800;
-        text-shadow: 1px 1px 2px #ffffff;
-    }
+  #botaoModoEscuro {
+    height: 30px;
+    width: 30px;
+  }
 
-    .tituloOrientacoes {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        height: 100%;
-        width: 320px;
-        background-color: #00CEC8;
-        color: #077262;
-        margin: 10px 0;
-        margin-bottom: 10px;
-        padding: 50px;
-        border-radius: 20px;
-    }
-    
-    .tituloOrientacoes h2 {
-        font-size: 1.1rem;
-        font-weight: 800;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 4px #ffffff;
-    }
-    
-    .tituloOrientacoes p {
-        font-size: 0.8rem;
-        font-weight: 500;
-        text-align: justify;
-        line-height: 1.1;
-        margin-bottom: 20px;
-    }
+  #botaoLogin {
+    height: 30px;
+    width: 30px;
+  }
 
-    .orientacoes {
-        display: flex;
-        flex-direction:column-reverse;
-        align-items: center;
-        min-height: 500px;
-        width: 320px;
-        margin-bottom: 10px;
-        border-radius: 20px;
-        
-    }
-    
-    .orientacoesTexto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-        font-weight: 800;
-        padding: 10px;
-        background-color: #00CEC8;
-        min-height: 50%; 
-        width: 320px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-    
-    .orientacoesTexto h2 {
-        text-align: justify;
-        font-size: 1em;
-        margin: 5px;
-        text-shadow: 1px 1px 2px #ffffff;
-    }
-    
-    .orientacoesTexto p {
-        text-align: justify;
-        font-size: 0.6em;
-        margin: 10px;
-        text-shadow: 1px 1px 2px #ffffff;
-    }
-    
-    .imagemOrientacoes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 50%;
-        width: 320px;
-        margin: 0;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 0px;
-        overflow: hidden;
-    }
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00cec8;
+    height: 150px;
+    width: 320px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 10px;
+    border-radius: 20px;
+  }
 
-    .imagemOrientacoes {
-        max-width: 100%;
-        object-fit: cover;
-    }
+  .cabecalho img {
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    image-rendering: auto;
+  }
 
-    .botao,
-    .modoEscuro {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color:#ffffff ;
-        color: #00CEC8;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        font-size: 0.6em;
-        height: 20px;
-        width: 60px;
-        line-height: 1.1;
-        margin: 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-        text-decoration: none;
-        transition: color 100ms;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-    }
+  #prancheta {
+    display: none;
+  }
 
-    .linkVideo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 320px;
-        height: 300px;
-        background-color: #00CEC8;
-        border-radius: 20px;
-    }
-    
-    .iframeVideo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 320px;
-        height: 300px;
-        border-radius: 20px;
-    }
+  .titulo {
+    flex-direction: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+  }
 
-    .footer {
-        margin-top: 100px;
-        background-color: #FFFFFF;
-        width: 320px;
-        height: 300px;
-    }
-    
-    #senac {
-        display: flex;
-        flex-direction: row;
-        background-color: #00CEC8;
-        width: 320px;
-        height: 50%;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-    }
+  .aviso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px;
+    background-color: #00cec8;
+    height: 100px;
+    width: 320px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+  }
 
-    #governoLogo {
-        width: 150px;
-        height: 100px;
-    }
-    
-    #senacLogo {
-        width: 110px;
-        height: 65px;
-    }
-    
-    #localizacao {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 320px;
-        height:50%;
-    }
-    #localizacao {
-        font-size: 0.9em;
-        font-weight: 700;
-    }
-    
-    #localizacaoImagem{
-        margin-right: 5px;
-    }
+  .aviso h2 {
+    line-height: 1;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px #ffffff;
+  }
+
+  .tituloOrientacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 320px;
+    background-color: #00cec8;
+    color: #077262;
+    margin: 10px 0;
+    margin-bottom: 10px;
+    padding: 50px;
+    border-radius: 20px;
+  }
+
+  .tituloOrientacoes h2 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #ffffff;
+  }
+
+  .tituloOrientacoes p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .orientacoes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    min-height: 500px;
+    width: 320px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+
+  .orientacoesTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-weight: 800;
+    padding: 10px;
+    background-color: #00cec8;
+    min-height: 50%;
+    width: 320px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .orientacoesTexto h2 {
+    text-align: justify;
+    font-size: 1em;
+    margin: 5px;
+    text-shadow: 1px 1px 2px #ffffff;
+  }
+
+  .orientacoesTexto p {
+    text-align: justify;
+    font-size: 0.6em;
+    margin: 10px;
+    text-shadow: 1px 1px 2px #ffffff;
+  }
+
+  .imagemOrientacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50%;
+    width: 320px;
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    overflow: hidden;
+  }
+
+  .imagemOrientacoes {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .botao,
+  .modoEscuro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #00cec8;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.6em;
+    height: 20px;
+    width: 60px;
+    line-height: 1.1;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .linkVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 300px;
+    background-color: #00cec8;
+    border-radius: 20px;
+  }
+
+  .iframeVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .footer {
+    margin-top: 100px;
+    background-color: #ffffff;
+    width: 320px;
+    height: 300px;
+  }
+
+  #senac {
+    display: flex;
+    flex-direction: row;
+    background-color: #00cec8;
+    width: 320px;
+    height: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+
+  #governoLogo {
+    width: 150px;
+    height: 100px;
+  }
+
+  #senacLogo {
+    width: 110px;
+    height: 65px;
+  }
+
+  #localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 50%;
+  }
+  #localizacao {
+    font-size: 0.9em;
+    font-weight: 700;
+  }
+
+  #localizacaoImagem {
+    margin-right: 5px;
+  }
 }
-
-
