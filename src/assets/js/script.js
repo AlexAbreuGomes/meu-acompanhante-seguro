@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const textElements = document.querySelectorAll('.orientacoesTexto p');
-    const charLimit = 200; // Limite de caracteres
+    const charLimit = 150; // Limite de caracteres
 
     textElements.forEach(element => {
         let originalText = element.innerText;

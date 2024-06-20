@@ -143,6 +143,7 @@ body {
   line-height: 1;
   font-size: 3em; /* Reduzi o tamanho do texto para caber melhor */
   font-weight: 800;
+  text-shadow: 2px 2px 4px #ffffff;
 }
 
 .tituloOrientacoes {
@@ -162,7 +163,7 @@ body {
 }
 
 .tituloOrientacoes h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 800;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px #ffffff;
@@ -192,7 +193,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: justify;
-  font-weight: 800;
   padding: 0 50px;
   background-color: #00bfba;
   height: 100%;
@@ -204,22 +204,26 @@ body {
 }
 
 .orientacoesTexto h2 {
-  text-align: justify;
-  font-size: 1.75em;
-  margin: 10px;
-  text-shadow: 2px 2px 4px #00d8d1;
+  font-size: 2em;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  padding-top: 15px;
+  text-shadow: 2px 2px 4px #ffffff;
 }
 
 .orientacoesTexto p {
-  text-align: justify;
-  font-size: 1.2em;
-  margin: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.1;
+    margin-bottom: 20px;
   overflow: hidden; /* Oculta o texto que ultrapassa a área */
   text-overflow: ellipsis; /* Adiciona reticências ao final do texto */
   display: -webkit-box; /* Flexbox para browsers webkit */
   -webkit-line-clamp: 3; /* Número de linhas que deseja mostrar */
-  -webkit-box-orient: vertical; /* Define orientação vertical */
-  text-shadow: 2px 2px 4px #00d8d1;
+  
 }
 
 .imagemOrientacoes {
@@ -266,7 +270,8 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  color: #00bfba;
+  font-weight: 700;
+  color: #077262;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -347,907 +352,2593 @@ a:focus {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 428px) {
 
-  #opcoesUsuarios {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adiciona espaço entre os itens */
-    width: 418px;
-    height: 60px;
-    padding: 0 20px; /* Espaçamento interno para melhor aparência */
-  }
+@media screen and (max-width: 480px) {
 
-  .inicio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    height: 35px;
-    width: 35px;
-    background-color: #fcffff;
-    border-radius: 50%;
+    #opcoesUsuarios {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* Adiciona espaço entre os itens */
+      width: 470px;
+      height: 60px;
+      padding: 0 20px;
+      /* Espaçamento interno para melhor aparência */
+    }
+  
+    .inicio {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      height: 35px;
+      width: 35px;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .inicio a {
+      display: flex;
+      align-items: center;
+      width: 25px;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 25px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .inicio img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      /* Mudança: Alinhar itens verticalmente */
+      height: 35px;
+      width: 100px;
+      background-color: #fcffff;
+      border-radius: 40px;
+    }
+  
+    .menu a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+      width: 25px;
+      /* Mudança: Largura fixa */
+      height: 25px;
+      /* Mudança: Altura fixa */
+    }
+  
+    .menu img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      background-color: #00CEC8;
+      height: 100px;
+      width: 470px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-right: 0px;
+      border-radius: 20px;
+    }
+  
+    .cabecalho img {
+      height: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      image-rendering: auto;
+    }
+  
+    #prancheta {
+      display: none;
+    }
+  
+    .titulo {
+      flex-direction: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  
+    .aviso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* Centraliza verticalmente */
+      margin-left: 5px;
+      margin-right: 5px;
+      margin: 10px 0;
+      background-color: #00bfba;
+      height: 180px;
+      width: 470px;
+      /* Ajuste conforme necessário */
+      border-radius: 20px;
+      position: relative;
+      /* Adicionado para posicionar o botão Play */
+    }
+  
+    .aviso h2 {
+      line-height: 1;
+      font-size: 1.5em;
+      /* Reduzi o tamanho do texto para caber melhor */
+      font-weight: 800;
+    }
+  
+    .avisoTexto {
+      text-align: center;
+      /* Centraliza o conteúdo */
+      margin-bottom: 0px;
+      /* Espaçamento abaixo do texto */
+    }
+  
+    .playPauseBtn {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      position: absolute;
+      bottom: 5px;
+      /* Distância do fundo */
+      right: 5px;
+      /* Distância da direita */
+      background-color: #ffffff;
+      color: #00bfba;
+      border: none;
+      cursor: pointer;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .playPauseBtn a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+    }
+  
+    .playPauseBtn img {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 30px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .tituloOrientacoes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 470px;
+      background-color: #00CEC8;
+      color: #077262;
+      margin: 5px 0;
+      margin-bottom: 10px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  
+    .tituloOrientacoes h2 {
+      font-size: 2em;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #ffffff;
+    }
+  
+    .tituloOrientacoes p {
+      font-size: 1em;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+  
+    .orientacoes {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 550px;
+      width: 470px;
+      border-radius: 20px;
+    }
+  
+    .orientacoesTexto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      font-weight: 800;
+      padding: 10px;
+      background-color: #00CEC8;
+      width: 470px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  
+    .orientacoesTexto h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 5px;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .orientacoesTexto p {
+      text-align: justify;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .imagemOrientacoes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 470px;
+      margin: 0;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 0px;
+      overflow: hidden;
+    }
+  
+    .imagemOrientacoes {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  
+    .linkVideo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 470px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background-color: #00bfba;
+      border-radius: 20px;
+    }
+  
+    .iframeVideo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 470px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 20px;
+    }
+  
+    .botao {
+      display: inline-block;
+      /* Para ficar um abaixo do outro */
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      background-color: #ffffff;
+      color: #077262;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.7em;
+      font-weight: 800;
+      height: 30px;
+      width: 100px;
+      line-height: 1.1;
+      margin-top: 30px;
+      text-decoration: none;
+      transition: color 100ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+  
+    .footer {
+      margin-top: 100px;
+      background-color: #ffffff;
+      width: 480px;
+      height: 400px;
+    }
+  
+    .linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 480px;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  
+    #linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 480px;
+      height: 200px;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+  
+    #governoLogo {
+      width: 150px;
+      height: 100px;
+    }
+  
+    #senacLogo {
+      width: 110px;
+      height: 65px;
+    }
+  
+    #localizacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 480px;
+      height: 50%;
+    }
+  
+    #localizacao {
+      font-size: 0.9em;
+      font-weight: 700;
+    }
+  
+    #localizacaoImagem {
+      margin-right: 5px;
+    }
   }
   
-  .inicio a {
-    display: flex;
-    align-items: center;
-    width: 25px; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 25px; /* Mudança: Manter a proporção da imagem */
+  @media screen and (max-width: 428px) {
+  
+    #opcoesUsuarios {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* Adiciona espaço entre os itens */
+      width: 418px;
+      height: 60px;
+      padding: 0 20px;
+      /* Espaçamento interno para melhor aparência */
+    }
+  
+    .inicio {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      height: 35px;
+      width: 35px;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .inicio a {
+      display: flex;
+      align-items: center;
+      width: 25px;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 25px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .inicio img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      /* Mudança: Alinhar itens verticalmente */
+      height: 35px;
+      width: 100px;
+      background-color: #fcffff;
+      border-radius: 40px;
+    }
+  
+    .menu a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+      width: 25px;
+      /* Mudança: Largura fixa */
+      height: 25px;
+      /* Mudança: Altura fixa */
+    }
+  
+    .menu img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      background-color: #00CEC8;
+      height: 100px;
+      width: 418px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-right: 0px;
+      border-radius: 20px;
+    }
+  
+    .cabecalho img {
+      height: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      image-rendering: auto;
+    }
+  
+    #prancheta {
+      display: none;
+    }
+  
+    .titulo {
+      flex-direction: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  
+    .aviso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* Centraliza verticalmente */
+      margin-left: 5px;
+      margin-right: 5px;
+      margin: 10px 0;
+      background-color: #00bfba;
+      height: 180px;
+      width: 418px;
+      /* Ajuste conforme necessário */
+      border-radius: 20px;
+      position: relative;
+      /* Adicionado para posicionar o botão Play */
+    }
+  
+    .aviso h2 {
+      line-height: 1;
+      font-size: 1.5em;
+      /* Reduzi o tamanho do texto para caber melhor */
+      font-weight: 800;
+    }
+  
+    .avisoTexto {
+      text-align: center;
+      /* Centraliza o conteúdo */
+      margin-bottom: 0px;
+      /* Espaçamento abaixo do texto */
+    }
+  
+    .playPauseBtn {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      position: absolute;
+      bottom: 5px;
+      /* Distância do fundo */
+      right: 5px;
+      /* Distância da direita */
+      background-color: #ffffff;
+      color: #00bfba;
+      border: none;
+      cursor: pointer;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .playPauseBtn a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+    }
+  
+    .playPauseBtn img {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 30px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .tituloOrientacoes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 418px;
+      background-color: #00CEC8;
+      color: #077262;
+      margin: 5px 0;
+      margin-bottom: 10px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  
+    .tituloOrientacoes h2 {
+      font-size: 2em;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #ffffff;
+    }
+  
+    .tituloOrientacoes p {
+      font-size: 1em;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+  
+    .orientacoes {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 550px;
+      width: 418px;
+      border-radius: 20px;
+    }
+  
+    .orientacoesTexto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      font-weight: 800;
+      padding: 10px;
+      background-color: #00CEC8;
+      width: 418px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  
+    .orientacoesTexto h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 5px;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .orientacoesTexto p {
+      text-align: justify;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .imagemOrientacoes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 418px;
+      margin: 0;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 0px;
+      overflow: hidden;
+    }
+  
+    .imagemOrientacoes {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  
+    .linkVideo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 418px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background-color: #00bfba;
+      border-radius: 20px;
+    }
+  
+    .iframeVideo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 418px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 20px;
+    }
+  
+    .botao {
+      display: inline-block;
+      /* Para ficar um abaixo do outro */
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      background-color: #ffffff;
+      color: #077262;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.7em;
+      font-weight: 800;
+      height: 30px;
+      width: 100px;
+      line-height: 1.1;
+      margin-top: 30px;
+      text-decoration: none;
+      transition: color 100ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+  
+    .footer {
+      margin-top: 100px;
+      background-color: #ffffff;
+      width: 428px;
+      height: 400px;
+    }
+  
+    .linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 428px;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  
+    #linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 428px;
+      height: 200px;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+  
+    #governoLogo {
+      width: 150px;
+      height: 100px;
+    }
+  
+    #senacLogo {
+      width: 110px;
+      height: 65px;
+    }
+  
+    #localizacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 428px;
+      height: 50%;
+    }
+  
+    #localizacao {
+      font-size: 0.9em;
+      font-weight: 700;
+    }
+  
+    #localizacaoImagem {
+      margin-right: 5px;
+    }
   }
   
-  .inicio img {
-    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto; /* Mudança: Manter a proporção da imagem */
+  @media screen and (max-width: 414px) {
+  
+    #opcoesUsuarios {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* Adiciona espaço entre os itens */
+      width: 404px;
+      height: 60px;
+      padding: 0 20px;
+      /* Espaçamento interno para melhor aparência */
+    }
+  
+    .inicio {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      height: 35px;
+      width: 35px;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .inicio a {
+      display: flex;
+      align-items: center;
+      width: 25px;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 25px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .inicio img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      /* Mudança: Alinhar itens verticalmente */
+      height: 35px;
+      width: 100px;
+      background-color: #fcffff;
+      border-radius: 40px;
+    }
+  
+    .menu a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+      width: 25px;
+      /* Mudança: Largura fixa */
+      height: 25px;
+      /* Mudança: Altura fixa */
+    }
+  
+    .menu img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      background-color: #00CEC8;
+      height: 100px;
+      width: 404px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-right: 0px;
+      border-radius: 20px;
+    }
+  
+    .cabecalho img {
+      height: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      image-rendering: auto;
+    }
+  
+    #prancheta {
+      display: none;
+    }
+  
+    .titulo {
+      flex-direction: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  
+    .aviso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* Centraliza verticalmente */
+      margin-left: 5px;
+      margin-right: 5px;
+      margin: 10px 0;
+      background-color: #00bfba;
+      height: 180px;
+      width: 404px;
+      /* Ajuste conforme necessário */
+      border-radius: 20px;
+      position: relative;
+      /* Adicionado para posicionar o botão Play */
+    }
+  
+    .aviso h2 {
+      line-height: 1;
+      font-size: 1.5em;
+      /* Reduzi o tamanho do texto para caber melhor */
+      font-weight: 800;
+    }
+  
+    .avisoTexto {
+      text-align: center;
+      /* Centraliza o conteúdo */
+      margin-bottom: 0px;
+      /* Espaçamento abaixo do texto */
+    }
+  
+    .playPauseBtn {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      position: absolute;
+      bottom: 5px;
+      /* Distância do fundo */
+      right: 5px;
+      /* Distância da direita */
+      background-color: #ffffff;
+      color: #00bfba;
+      border: none;
+      cursor: pointer;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .playPauseBtn a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+    }
+  
+    .playPauseBtn img {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 30px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .tituloOrientacoes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 404px;
+      background-color: #00CEC8;
+      color: #077262;
+      margin: 5px 0;
+      margin-bottom: 10px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  
+    .tituloOrientacoes h2 {
+      font-size: 2em;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #ffffff;
+    }
+  
+    .tituloOrientacoes p {
+      font-size: 1em;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+  
+    .orientacoes {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 550px;
+      width: 404px;
+      border-radius: 20px;
+    }
+  
+    .orientacoesTexto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      font-weight: 800;
+      padding: 10px;
+      background-color: #00CEC8;
+      width: 404px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  
+    .orientacoesTexto h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 5px;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .orientacoesTexto p {
+      text-align: justify;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .imagemOrientacoes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 404px;
+      margin: 0;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 0px;
+      overflow: hidden;
+    }
+  
+    .imagemOrientacoes {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  
+    .linkVideo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 404px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background-color: #00bfba;
+      border-radius: 20px;
+    }
+  
+    .iframeVideo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 404px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 20px;
+    }
+  
+    .botao {
+      display: inline-block;
+      /* Para ficar um abaixo do outro */
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      background-color: #ffffff;
+      color: #077262;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.7em;
+      font-weight: 800;
+      height: 30px;
+      width: 100px;
+      line-height: 1.1;
+      margin-top: 30px;
+      text-decoration: none;
+      transition: color 100ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+  
+    .footer {
+      margin-top: 100px;
+      background-color: #ffffff;
+      width: 414px;
+      height: 400px;
+    }
+  
+    .linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 414px;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  
+    #linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 414px;
+      height: 200px;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+  
+    #governoLogo {
+      width: 150px;
+      height: 100px;
+    }
+  
+    #senacLogo {
+      width: 110px;
+      height: 65px;
+    }
+  
+    #localizacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 414px;
+      height: 50%;
+    }
+  
+    #localizacao {
+      font-size: 0.9em;
+      font-weight: 700;
+    }
+  
+    #localizacaoImagem {
+      margin-right: 5px;
+    }
   }
   
-  .menu {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center; /* Não é necessário, mas pode ser mantido */
-    align-items: center; /* Mudança: Alinhar itens verticalmente */
-    height: 35px;
-    width: 100px;
-    background-color: #fcffff;
-    border-radius: 40px;
+  @media screen and (max-width: 393px) {
+  
+    #opcoesUsuarios {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* Adiciona espaço entre os itens */
+      width: 383px;
+      height: 60px;
+      padding: 0 20px;
+      /* Espaçamento interno para melhor aparência */
+    }
+  
+    .inicio {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      height: 35px;
+      width: 35px;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .inicio a {
+      display: flex;
+      align-items: center;
+      width: 25px;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 25px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .inicio img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      /* Mudança: Alinhar itens verticalmente */
+      height: 35px;
+      width: 100px;
+      background-color: #fcffff;
+      border-radius: 40px;
+    }
+  
+    .menu a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+      width: 25px;
+      /* Mudança: Largura fixa */
+      height: 25px;
+      /* Mudança: Altura fixa */
+    }
+  
+    .menu img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      background-color: #00CEC8;
+      height: 100px;
+      width: 383px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-right: 0px;
+      border-radius: 20px;
+    }
+  
+    .cabecalho img {
+      height: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      image-rendering: auto;
+    }
+  
+    #prancheta {
+      display: none;
+    }
+  
+    .titulo {
+      flex-direction: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  
+    .aviso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* Centraliza verticalmente */
+      margin-left: 5px;
+      margin-right: 5px;
+      margin: 10px 0;
+      background-color: #00bfba;
+      height: 180px;
+      width: 383px;
+      /* Ajuste conforme necessário */
+      border-radius: 20px;
+      position: relative;
+      /* Adicionado para posicionar o botão Play */
+    }
+  
+    .aviso h2 {
+      line-height: 1;
+      font-size: 1.5em;
+      /* Reduzi o tamanho do texto para caber melhor */
+      font-weight: 800;
+    }
+  
+    .avisoTexto {
+      text-align: center;
+      /* Centraliza o conteúdo */
+      margin-bottom: 0px;
+      /* Espaçamento abaixo do texto */
+    }
+  
+    .playPauseBtn {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      position: absolute;
+      bottom: 5px;
+      /* Distância do fundo */
+      right: 5px;
+      /* Distância da direita */
+      background-color: #ffffff;
+      color: #00bfba;
+      border: none;
+      cursor: pointer;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .playPauseBtn a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+    }
+  
+    .playPauseBtn img {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 30px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .tituloOrientacoes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 383px;
+      background-color: #00CEC8;
+      color: #077262;
+      margin: 5px 0;
+      margin-bottom: 10px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  
+    .tituloOrientacoes h2 {
+      font-size: 2em;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #ffffff;
+    }
+  
+    .tituloOrientacoes p {
+      font-size: 1em;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+  
+    .orientacoes {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 550px;
+      width: 383px;
+      border-radius: 20px;
+    }
+  
+    .orientacoesTexto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      font-weight: 800;
+      padding: 10px;
+      background-color: #00CEC8;
+      width: 383px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  
+    .orientacoesTexto h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 5px;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .orientacoesTexto p {
+      text-align: justify;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .imagemOrientacoes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 383px;
+      margin: 0;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 0px;
+      overflow: hidden;
+    }
+  
+    .imagemOrientacoes {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  
+    .linkVideo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 383px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background-color: #00bfba;
+      border-radius: 20px;
+    }
+  
+    .iframeVideo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 383px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 20px;
+    }
+  
+    .botao {
+      display: inline-block;
+      /* Para ficar um abaixo do outro */
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      background-color: #ffffff;
+      color: #077262;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.7em;
+      font-weight: 800;
+      height: 30px;
+      width: 100px;
+      line-height: 1.1;
+      margin-top: 30px;
+      text-decoration: none;
+      transition: color 100ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+  
+    .footer {
+      margin-top: 100px;
+      background-color: #ffffff;
+      width: 393px;
+      height: 400px;
+    }
+  
+    .linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 393px;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  
+    #linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 393px;
+      height: 200px;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+  
+    #governoLogo {
+      width: 150px;
+      height: 100px;
+    }
+  
+    #senacLogo {
+      width: 110px;
+      height: 65px;
+    }
+  
+    #localizacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 393px;
+      height: 50%;
+    }
+  
+    #localizacao {
+      font-size: 0.9em;
+      font-weight: 700;
+    }
+  
+    #localizacaoImagem {
+      margin-right: 5px;
+    }
   }
   
-  .menu a {
-    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center; /* Mudança: Centralizar horizontalmente */
-    align-items: center; /* Mudança: Centralizar verticalmente */
-    width: 25px; /* Mudança: Largura fixa */
-    height: 25px; /* Mudança: Altura fixa */
+  @media screen and (max-width: 375px) {
+  
+    #opcoesUsuarios {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* Adiciona espaço entre os itens */
+      width: 365px;
+      height: 60px;
+      padding: 0 20px;
+      /* Espaçamento interno para melhor aparência */
+    }
+  
+    .inicio {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      height: 35px;
+      width: 35px;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .inicio a {
+      display: flex;
+      align-items: center;
+      width: 25px;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 25px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .inicio img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      /* Mudança: Alinhar itens verticalmente */
+      height: 35px;
+      width: 100px;
+      background-color: #fcffff;
+      border-radius: 40px;
+    }
+  
+    .menu a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+      width: 25px;
+      /* Mudança: Largura fixa */
+      height: 25px;
+      /* Mudança: Altura fixa */
+    }
+  
+    .menu img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      background-color: #00CEC8;
+      height: 100px;
+      width: 365px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-right: 0px;
+      border-radius: 20px;
+    }
+  
+    .cabecalho img {
+      height: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      image-rendering: auto;
+    }
+  
+    #prancheta {
+      display: none;
+    }
+  
+    .titulo {
+      flex-direction: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  
+    .aviso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* Centraliza verticalmente */
+      margin-left: 5px;
+      margin-right: 5px;
+      margin: 10px 0;
+      background-color: #00bfba;
+      height: 180px;
+      width: 365px;
+      /* Ajuste conforme necessário */
+      border-radius: 20px;
+      position: relative;
+      /* Adicionado para posicionar o botão Play */
+    }
+  
+    .aviso h2 {
+      line-height: 1;
+      font-size: 1.5em;
+      /* Reduzi o tamanho do texto para caber melhor */
+      font-weight: 800;
+    }
+  
+    .avisoTexto {
+      text-align: center;
+      /* Centraliza o conteúdo */
+      margin-bottom: 0px;
+      /* Espaçamento abaixo do texto */
+    }
+  
+    .playPauseBtn {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      position: absolute;
+      bottom: 5px;
+      /* Distância do fundo */
+      right: 5px;
+      /* Distância da direita */
+      background-color: #ffffff;
+      color: #00bfba;
+      border: none;
+      cursor: pointer;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .playPauseBtn a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+    }
+  
+    .playPauseBtn img {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 30px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .tituloOrientacoes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 365px;
+      background-color: #00CEC8;
+      color: #077262;
+      margin: 5px 0;
+      margin-bottom: 10px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  
+    .tituloOrientacoes h2 {
+      font-size: 2em;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #ffffff;
+    }
+  
+    .tituloOrientacoes p {
+      font-size: 1em;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+  
+    .orientacoes {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 550px;
+      width: 365px;
+      border-radius: 20px;
+    }
+  
+    .orientacoesTexto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      font-weight: 800;
+      padding: 10px;
+      background-color: #00CEC8;
+      width: 365px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  
+    .orientacoesTexto h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 5px;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .orientacoesTexto p {
+      text-align: justify;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .imagemOrientacoes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 365px;
+      margin: 0;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 0px;
+      overflow: hidden;
+    }
+  
+    .imagemOrientacoes {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  
+    .linkVideo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 365px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background-color: #00bfba;
+      border-radius: 20px;
+    }
+  
+    .iframeVideo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 365px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 20px;
+    }
+  
+    .botao {
+      display: inline-block;
+      /* Para ficar um abaixo do outro */
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      background-color: #ffffff;
+      color: #077262;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.7em;
+      font-weight: 800;
+      height: 30px;
+      width: 100px;
+      line-height: 1.1;
+      margin-top: 30px;
+      text-decoration: none;
+      transition: color 100ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+  
+    .footer {
+      margin-top: 100px;
+      background-color: #ffffff;
+      width: 375px;
+      height: 400px;
+    }
+  
+    .linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 375px;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  
+    #linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 375px;
+      height: 200px;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+  
+    #governoLogo {
+      width: 150px;
+      height: 100px;
+    }
+  
+    #senacLogo {
+      width: 110px;
+      height: 65px;
+    }
+  
+    #localizacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 375px;
+      height: 50%;
+    }
+  
+    #localizacao {
+      font-size: 0.9em;
+      font-weight: 700;
+    }
+  
+    #localizacaoImagem {
+      margin-right: 5px;
+    }
   }
   
-  .menu img {
-    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto; /* Mudança: Manter a proporção da imagem */
+  @media screen and (max-width: 360px) {
+  
+    #opcoesUsuarios {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* Adiciona espaço entre os itens */
+      width: 350px;
+      height: 60px;
+      padding: 0 20px;
+      /* Espaçamento interno para melhor aparência */
+    }
+  
+    .inicio {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      height: 35px;
+      width: 35px;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .inicio a {
+      display: flex;
+      align-items: center;
+      width: 25px;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 25px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .inicio img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      /* Mudança: Alinhar itens verticalmente */
+      height: 35px;
+      width: 100px;
+      background-color: #fcffff;
+      border-radius: 40px;
+    }
+  
+    .menu a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+      width: 25px;
+      /* Mudança: Largura fixa */
+      height: 25px;
+      /* Mudança: Altura fixa */
+    }
+  
+    .menu img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      background-color: #00CEC8;
+      height: 100px;
+      width: 350px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-right: 0px;
+      border-radius: 20px;
+    }
+  
+    .cabecalho img {
+      height: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      image-rendering: auto;
+    }
+  
+    #prancheta {
+      display: none;
+    }
+  
+    .titulo {
+      flex-direction: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  
+    .aviso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* Centraliza verticalmente */
+      margin-left: 5px;
+      margin-right: 5px;
+      margin: 10px 0;
+      background-color: #00bfba;
+      height: 180px;
+      width: 350px;
+      /* Ajuste conforme necessário */
+      border-radius: 20px;
+      position: relative;
+      /* Adicionado para posicionar o botão Play */
+    }
+  
+    .aviso h2 {
+      line-height: 1;
+      font-size: 1.5em;
+      /* Reduzi o tamanho do texto para caber melhor */
+      font-weight: 800;
+    }
+  
+    .avisoTexto {
+      text-align: center;
+      /* Centraliza o conteúdo */
+      margin-bottom: 0px;
+      /* Espaçamento abaixo do texto */
+    }
+  
+    .playPauseBtn {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      position: absolute;
+      bottom: 5px;
+      /* Distância do fundo */
+      right: 5px;
+      /* Distância da direita */
+      background-color: #ffffff;
+      color: #00bfba;
+      border: none;
+      cursor: pointer;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .playPauseBtn a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+    }
+  
+    .playPauseBtn img {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 30px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .tituloOrientacoes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 350px;
+      background-color: #00CEC8;
+      color: #077262;
+      margin: 5px 0;
+      margin-bottom: 10px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  
+    .tituloOrientacoes h2 {
+      font-size: 2em;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #ffffff;
+    }
+  
+    .tituloOrientacoes p {
+      font-size: 1em;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+  
+    .orientacoes {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 550px;
+      width: 350px;
+      border-radius: 20px;
+    }
+  
+    .orientacoesTexto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      font-weight: 800;
+      padding: 10px;
+      background-color: #00CEC8;
+      width: 350px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  
+    .orientacoesTexto h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 5px;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .orientacoesTexto p {
+      text-align: justify;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .imagemOrientacoes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 350px;
+      margin: 0;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 0px;
+      overflow: hidden;
+    }
+  
+    .imagemOrientacoes {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  
+    .linkVideo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 350px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background-color: #00bfba;
+      border-radius: 20px;
+    }
+  
+    .iframeVideo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 20px;
+    }
+  
+    .botao {
+      display: inline-block;
+      /* Para ficar um abaixo do outro */
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      background-color: #ffffff;
+      color: #077262;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.7em;
+      font-weight: 800;
+      height: 30px;
+      width: 100px;
+      line-height: 1.1;
+      margin-top: 30px;
+      text-decoration: none;
+      transition: color 100ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+  
+    .footer {
+      margin-top: 100px;
+      background-color: #ffffff;
+      width: 360px;
+      height: 400px;
+    }
+  
+    .linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 360px;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  
+    #linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 360px;
+      height: 200px;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+  
+    #governoLogo {
+      width: 150px;
+      height: 100px;
+    }
+  
+    #senacLogo {
+      width: 110px;
+      height: 65px;
+    }
+  
+    #localizacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 360px;
+      height: 50%;
+    }
+  
+    #localizacao {
+      font-size: 0.9em;
+      font-weight: 700;
+    }
+  
+    #localizacaoImagem {
+      margin-right: 5px;
+    }
   }
   
-  .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    background-color: #00CEC8;
-    height:100px;
-    width: 418px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-right: 0px;
-    border-radius: 20px;
-}
-
-.cabecalho img { 
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    image-rendering: auto;
-}
-
-#prancheta {
-    display: none;
-}
-
-.titulo {      
-    flex-direction: center;                         
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9em;
-    color: #FFFFFF;
-    text-align: center;
-}
+  @media screen and (max-width: 320px) {
   
-  .aviso {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Centraliza verticalmente */
-    margin-left: 5px;
-    margin-right: 5px;
-    margin: 10px 0;
-    background-color: #00bfba;
-    height: 180px;
-    width: 418px; /* Ajuste conforme necessário */
-    border-radius: 20px;
-    position: relative; /* Adicionado para posicionar o botão Play */
-  }
-
-  .aviso h2 {
-    line-height: 1;
-    font-size: 1.5em; /* Reduzi o tamanho do texto para caber melhor */
-    font-weight: 800;
-  }
+    #opcoesUsuarios {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* Adiciona espaço entre os itens */
+      width: 310px;
+      height: 60px;
+      padding: 0 20px;
+      /* Espaçamento interno para melhor aparência */
+    }
   
-  .avisoTexto {
-    text-align: center; /* Centraliza o conteúdo */
-    margin-bottom: 0px; /* Espaçamento abaixo do texto */
-  }
-
-  .playPauseBtn {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    position: absolute;
-    bottom: 5px; /* Distância do fundo */
-    right: 5px; /* Distância da direita */
-    background-color: #ffffff;
-    color: #00bfba;
-    border: none;
-    cursor: pointer;
-    background-color: #fcffff;
-    border-radius: 50%;
-  }
+    .inicio {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      height: 35px;
+      width: 35px;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
   
-  .playPauseBtn a {
-    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center; /* Mudança: Centralizar horizontalmente */
-    align-items: center; /* Mudança: Centralizar verticalmente */
-  }
+    .inicio a {
+      display: flex;
+      align-items: center;
+      width: 25px;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 25px;
+      /* Mudança: Manter a proporção da imagem */
+    }
   
-  .playPauseBtn img {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 30px; /* Mudança: Manter a proporção da imagem */
-  }
+    .inicio img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
   
-  .tituloOrientacoes {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    height: 100%;
-    width: 418px;
-    background-color: #00CEC8;
-    color: #077262;
-    margin: 5px 0;
-    margin-bottom: 10px;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.tituloOrientacoes h2 {
-    font-size: 2em;
-    font-weight: 800;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px #ffffff;
-}
-
-.tituloOrientacoes p {
-    font-size: 1em;
-    font-weight: 500;
-    text-align: justify;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.orientacoes {
-    display: flex;
-    flex-direction:column-reverse;
-    align-items: center;
-    height:550px;
-    width: 418px;
-    border-radius: 20px;
-}
-
-.orientacoesTexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    font-weight: 800;
-    padding: 10px;
-    background-color: #00CEC8; 
-    width: 418px;
-    height: 400px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.orientacoesTexto h2 {
-    text-align:center;
-    font-size: 1.5em;
-    margin: 5px;
-    text-shadow: 1px 1px 2px #ffffff;
-}
-
-.orientacoesTexto p {
-    text-align:justify;
-    font-size: 1.2em;
-    text-shadow: 1px 1px 2px #ffffff;
-}
-
-.imagemOrientacoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-    width: 418px;
-    margin: 0;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 0px;
-    overflow: hidden;
-}
-
-.imagemOrientacoes {
-    max-width: 100%;
-    object-fit: cover;
-}
-
-.linkVideo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 418px;
-  height: 400px;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: #00bfba;
-  border-radius: 20px;
-}
-
-.iframeVideo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 418px;
-  height: 400px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 20px;
-}
-
-.botao {
-  display: inline-block; /* Para ficar um abaixo do outro */
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  background-color: #ffffff;
-  color: #077262;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.7em;
-  font-weight: 800;
-  height: 30px;
-  width: 100px;
-  line-height: 1.1;
-  margin-top: 30px;
-  text-decoration: none;
-  transition: color 100ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
+    .menu {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      /* Não é necessário, mas pode ser mantido */
+      align-items: center;
+      /* Mudança: Alinhar itens verticalmente */
+      height: 35px;
+      width: 100px;
+      background-color: #fcffff;
+      border-radius: 40px;
+    }
   
-  .linkFooter {
-    display: flex;
-    flex-direction: row;
-    background-color: #00cec8;
-    width: 418px;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
+    .menu a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+      width: 25px;
+      /* Mudança: Largura fixa */
+      height: 25px;
+      /* Mudança: Altura fixa */
+    }
+  
+    .menu img {
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: auto;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      background-color: #00CEC8;
+      height: 100px;
+      width: 310px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-right: 0px;
+      border-radius: 20px;
+    }
+  
+    .cabecalho img {
+      height: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      image-rendering: auto;
+    }
+  
+    #prancheta {
+      display: none;
+    }
+  
+    .titulo {
+      flex-direction: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  
+    .aviso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* Centraliza verticalmente */
+      margin-left: 5px;
+      margin-right: 5px;
+      margin: 10px 0;
+      background-color: #00bfba;
+      height: 180px;
+      width: 310px;
+      /* Ajuste conforme necessário */
+      border-radius: 20px;
+      position: relative;
+      /* Adicionado para posicionar o botão Play */
+    }
+  
+    .aviso h2 {
+      line-height: 1;
+      font-size: 1.5em;
+      /* Reduzi o tamanho do texto para caber melhor */
+      font-weight: 800;
+    }
+  
+    .avisoTexto {
+      text-align: center;
+      /* Centraliza o conteúdo */
+      margin-bottom: 0px;
+      /* Espaçamento abaixo do texto */
+    }
+  
+    .playPauseBtn {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      position: absolute;
+      bottom: 5px;
+      /* Distância do fundo */
+      right: 5px;
+      /* Distância da direita */
+      background-color: #ffffff;
+      color: #00bfba;
+      border: none;
+      cursor: pointer;
+      background-color: #fcffff;
+      border-radius: 50%;
+    }
+  
+    .playPauseBtn a {
+      display: flex;
+      /* Mudança: Usar flexbox para centralizar conteúdo */
+      justify-content: center;
+      /* Mudança: Centralizar horizontalmente */
+      align-items: center;
+      /* Mudança: Centralizar verticalmente */
+    }
+  
+    .playPauseBtn img {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+      /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+      height: 30px;
+      /* Mudança: Manter a proporção da imagem */
+    }
+  
+    .tituloOrientacoes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 310px;
+      background-color: #00CEC8;
+      color: #077262;
+      margin: 5px 0;
+      margin-bottom: 10px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  
+    .tituloOrientacoes h2 {
+      font-size: 2em;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #ffffff;
+    }
+  
+    .tituloOrientacoes p {
+      font-size: 1em;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+  
+    .orientacoes {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 550px;
+      width: 310px;
+      border-radius: 20px;
+    }
+  
+    .orientacoesTexto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      font-weight: 800;
+      padding: 10px;
+      background-color: #00CEC8;
+      width: 310px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  
+    .orientacoesTexto h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 5px;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .orientacoesTexto p {
+      text-align: justify;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+  
+    .imagemOrientacoes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 310px;
+      margin: 0;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 0px;
+      overflow: hidden;
+    }
+  
+    .imagemOrientacoes {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  
+    .linkVideo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 310px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background-color: #00bfba;
+      border-radius: 20px;
+    }
+  
+    .iframeVideo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 310px;
+      height: 400px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 20px;
+    }
+  
+    .botao {
+      display: inline-block;
+      /* Para ficar um abaixo do outro */
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      background-color: #ffffff;
+      color: #077262;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.7em;
+      font-weight: 800;
+      height: 30px;
+      width: 100px;
+      line-height: 1.1;
+      margin-top: 30px;
+      text-decoration: none;
+      transition: color 100ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+  
+    .footer {
+      margin-top: 100px;
+      background-color: #ffffff;
+      width: 320px;
+      height: 400px;
+    }
+  
+    .linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 320px;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  
+    #linkFooter {
+      display: flex;
+      flex-direction: row;
+      background-color: #00cec8;
+      width: 320px;
+      height: 200px;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+  
+    #governoLogo {
+      width: 150px;
+      height: 100px;
+    }
+  
+    #senacLogo {
+      width: 110px;
+      height: 65px;
+    }
+  
+    #localizacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 320px;
+      height: 50%;
+    }
+  
+    #localizacao {
+      font-size: 0.9em;
+      font-weight: 700;
+    }
+  
+    #localizacaoImagem {
+      margin-right: 5px;
+    }
   }
-
-  #governoLogo {
-    width: 150px;
-    height: 100px;
-  }
-
-  #senacLogo {
-    width: 110px;
-    height: 65px;
-  }
-
-  #localizacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 428px;
-    height: 50%;
-  }
-  #localizacao {
-    font-size: 0.9em;
-    font-weight: 700;
-  }
-
-  #localizacaoImagem {
-    margin-right: 5px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  #opcoesUsuarios {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adiciona espaço entre os itens */
-    height: 60px;
-    width: 360px;
-  }
-  .inicio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    height: 35px;
-    width: 35px;
-    background-color: #fcffff;
-    border-radius: 50%;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center; /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    background-color: #fcffff;
-    border-radius: 20px;
-    gap: 5px; /* Adiciona espaçamento de 20px entre os botões */
-  }
-
-  #botaoInicio {
-    height: 25px;
-    width: 25px;
-  }
-
-  #botaoDiminuir {
-    height: 30px;
-    width: 30px;
-  }
-
-  #botaoAumentar {
-    height: 35px;
-    width: 30px;
-  }
-
-  #botaoModoEscuro {
-    height: 30px;
-    width: 30px;
-  }
-
-  #botaoLogin {
-    height: 30px;
-    width: 30px;
-  }
-
-  .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    background-color: #00cec8;
-    height: 150px;
-    width: 350px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-right: 10px;
-    border-radius: 20px;
-  }
-
-  .cabecalho img {
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    image-rendering: auto;
-  }
-
-  #prancheta {
-    display: none;
-  }
-
-  .titulo {
-    flex-direction: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1em;
-    color: #ffffff;
-    text-align: center;
-  }
-
-  .aviso {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 15px 0 15px;
-    background-color: #00cec8;
-    height: 100px;
-    width: 350px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 20px;
-  }
-
-  .aviso h2 {
-    line-height: 1;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 800;
-    text-shadow: 1px 1px 2px #ffffff;
-  }
-
-  .tituloOrientacoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 350px;
-    background-color: #00cec8;
-    color: #077262;
-    margin: 10px 0;
-    margin-bottom: 10px;
-    padding: 50px;
-    border-radius: 20px;
-  }
-
-  .tituloOrientacoes h2 {
-    font-size: 1.1rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px #ffffff;
-  }
-
-  .tituloOrientacoes p {
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-align: justify;
-    line-height: 1.1;
-    margin-bottom: 20px;
-  }
-
-  .orientacoes {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    min-height: 500px;
-    width: 350px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-  }
-
-  .orientacoesTexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    font-weight: 800;
-    padding: 10px;
-    background-color: #00cec8;
-    min-height: 50%;
-    width: 350px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-
-  .orientacoesTexto h2 {
-    text-align: justify;
-    font-size: 1em;
-    margin: 5px;
-    text-shadow: 1px 1px 2px #ffffff;
-  }
-
-  .orientacoesTexto p {
-    text-align: justify;
-    font-size: 0.6em;
-    margin: 10px;
-    text-shadow: 1px 1px 2px #ffffff;
-  }
-
-  .imagemOrientacoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50%;
-    width: 350px;
-    margin: 0;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 0px;
-    overflow: hidden;
-  }
-
-  .imagemOrientacoes {
-    max-width: 100%;
-    object-fit: cover;
-  }
-
-  .botao,
-  .modoEscuro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    color: #00cec8;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 0.6em;
-    height: 20px;
-    width: 60px;
-    line-height: 1.1;
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-
-  .linkVideo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: 300px;
-    background-color: #00cec8;
-    border-radius: 20px;
-  }
-
-  .iframeVideo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 360px;
-    height: 300px;
-    border-radius: 20px;
-  }
-
-  .footer {
-    margin-top: 100px;
-    background-color: #ffffff;
-    width: 428px;
-    height: 300px;
-  }
-
-  #senac {
-    display: flex;
-    flex-direction: row;
-    background-color: #00cec8;
-    width: 428px;
-    height: 50%;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-  }
-
-  #governoLogo {
-    width: 150px;
-    height: 100px;
-  }
-
-  #senacLogo {
-    width: 110px;
-    height: 65px;
-  }
-
-  #localizacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 428px;
-    height: 50%;
-  }
-  #localizacao {
-    font-size: 0.9em;
-    font-weight: 700;
-  }
-
-  #localizacaoImagem {
-    margin-right: 5px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  #opcoesUsuarios {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adiciona espaço entre os itens */
-    height: 60px;
-    width: 320px;
-  }
-  .inicio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    height: 35px;
-    width: 35px;
-    background-color: #fcffff;
-    border-radius: 50%;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center; /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    background-color: #fcffff;
-    border-radius: 20px;
-    gap: 5px; /* Adiciona espaçamento de 20px entre os botões */
-  }
-
-  #botaoInicio {
-    height: 25px;
-    width: 25px;
-  }
-
-  #botaoDiminuir {
-    height: 30px;
-    width: 30px;
-  }
-
-  #botaoAumentar {
-    height: 35px;
-    width: 30px;
-  }
-
-  #botaoModoEscuro {
-    height: 30px;
-    width: 30px;
-  }
-
-  #botaoLogin {
-    height: 30px;
-    width: 30px;
-  }
-
-  .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    background-color: #00cec8;
-    height: 150px;
-    width: 320px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-right: 10px;
-    border-radius: 20px;
-  }
-
-  .cabecalho img {
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    image-rendering: auto;
-  }
-
-  #prancheta {
-    display: none;
-  }
-
-  .titulo {
-    flex-direction: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1em;
-    color: #ffffff;
-    text-align: center;
-  }
-
-  .aviso {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 15px 0 15px;
-    background-color: #00cec8;
-    height: 100px;
-    width: 320px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 20px;
-  }
-
-  .aviso h2 {
-    line-height: 1;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 800;
-    text-shadow: 1px 1px 2px #ffffff;
-  }
-
-  .tituloOrientacoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 320px;
-    background-color: #00cec8;
-    color: #077262;
-    margin: 10px 0;
-    margin-bottom: 10px;
-    padding: 50px;
-    border-radius: 20px;
-  }
-
-  .tituloOrientacoes h2 {
-    font-size: 1.1rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px #ffffff;
-  }
-
-  .tituloOrientacoes p {
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-align: justify;
-    line-height: 1.1;
-    margin-bottom: 20px;
-  }
-
-  .orientacoes {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    min-height: 500px;
-    width: 320px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-  }
-
-  .orientacoesTexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    font-weight: 800;
-    padding: 10px;
-    background-color: #00cec8;
-    min-height: 50%;
-    width: 320px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-
-  .orientacoesTexto h2 {
-    text-align: justify;
-    font-size: 1em;
-    margin: 5px;
-    text-shadow: 1px 1px 2px #ffffff;
-  }
-
-  .orientacoesTexto p {
-    text-align: justify;
-    font-size: 0.6em;
-    margin: 10px;
-    text-shadow: 1px 1px 2px #ffffff;
-  }
-
-  .imagemOrientacoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50%;
-    width: 320px;
-    margin: 0;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 0px;
-    overflow: hidden;
-  }
-
-  .imagemOrientacoes {
-    max-width: 100%;
-    object-fit: cover;
-  }
-
-  .botao,
-  .modoEscuro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    color: #00cec8;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 0.6em;
-    height: 20px;
-    width: 60px;
-    line-height: 1.1;
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-
-  .linkVideo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 320px;
-    height: 300px;
-    background-color: #00cec8;
-    border-radius: 20px;
-  }
-
-  .iframeVideo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    height: 300px;
-    border-radius: 20px;
-  }
-
-  .footer {
-    margin-top: 100px;
-    background-color: #ffffff;
-    width: 320px;
-    height: 300px;
-  }
-
-  #senac {
-    display: flex;
-    flex-direction: row;
-    background-color: #00cec8;
-    width: 320px;
-    height: 50%;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-  }
-
-  #governoLogo {
-    width: 150px;
-    height: 100px;
-  }
-
-  #senacLogo {
-    width: 110px;
-    height: 65px;
-  }
-
-  #localizacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    height: 50%;
-  }
-  #localizacao {
-    font-size: 0.9em;
-    font-weight: 700;
-  }
-
-  #localizacaoImagem {
-    margin-right: 5px;
-  }
-}
