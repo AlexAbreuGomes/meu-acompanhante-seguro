@@ -694,19 +694,16 @@ a:focus {
   #opcoesUsuarios {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Adiciona espaço entre os itens */
+    justify-content: space-between; /* Adiciona espaço entre os itens */
     width: 418px;
     height: 60px;
-    padding: 0 20px;
-    /* Espaçamento interno para melhor aparência */
+    padding: 0 20px; /* Espaçamento interno para melhor aparência */
   }
 
   .inicio {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
     align-items: center;
     height: 35px;
     width: 35px;
@@ -717,26 +714,20 @@ a:focus {
   .inicio a {
     display: flex;
     align-items: center;
-    width: 25px;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 25px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 25px; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 25px; /* Mudança: Manter a proporção da imagem */
   }
 
   .inicio img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .menu {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    /* Mudança: Alinhar itens verticalmente */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center; /* Mudança: Alinhar itens verticalmente */
     height: 35px;
     width: 100px;
     background-color: #fcffff;
@@ -744,23 +735,16 @@ a:focus {
   }
 
   .menu a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
-    width: 25px;
-    /* Mudança: Largura fixa */
-    height: 25px;
-    /* Mudança: Altura fixa */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
+    width: 25px; /* Mudança: Largura fixa */
+    height: 25px; /* Mudança: Altura fixa */
   }
 
   .menu img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .cabecalho {
@@ -800,32 +784,26 @@ a:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* Centraliza verticalmente */
+    align-items: center; /* Centraliza verticalmente */
     margin-left: 5px;
     margin-right: 5px;
     margin: 10px 0;
     background-color: #00bfba;
     height: 180px;
-    width: 418px;
-    /* Ajuste conforme necessário */
+    width: 418px; /* Ajuste conforme necessário */
     border-radius: 20px;
-    position: relative;
-    /* Adicionado para posicionar o botão Play */
+    position: relative; /* Adicionado para posicionar o botão Play */
   }
 
   .aviso h2 {
     line-height: 1;
-    font-size: 1.5em;
-    /* Reduzi o tamanho do texto para caber melhor */
+    font-size: 1.5em; /* Reduzi o tamanho do texto para caber melhor */
     font-weight: 800;
   }
 
   .avisoTexto {
-    text-align: center;
-    /* Centraliza o conteúdo */
-    margin-bottom: 0px;
-    /* Espaçamento abaixo do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 0px; /* Espaçamento abaixo do texto */
   }
 
   .playPauseBtn {
@@ -833,10 +811,8 @@ a:focus {
     align-items: center;
     justify-items: center;
     position: absolute;
-    bottom: 5px;
-    /* Distância do fundo */
-    right: 5px;
-    /* Distância da direita */
+    bottom: 5px; /* Distância do fundo */
+    right: 5px; /* Distância da direita */
     background-color: #ffffff;
     color: #00bfba;
     border: none;
@@ -846,22 +822,17 @@ a:focus {
   }
 
   .playPauseBtn a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
   }
 
   .playPauseBtn img {
     display: flex;
     justify-items: center;
     align-items: center;
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 30px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 30px; /* Mudança: Manter a proporção da imagem */
   }
 
   .tituloOrientacoes {
@@ -982,8 +953,7 @@ a:focus {
   }
 
   .botao {
-    display: inline-block;
-    /* Para ficar um abaixo do outro */
+    display: inline-block; /* Para ficar um abaixo do outro */
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -1056,19 +1026,16 @@ a:focus {
   #opcoesUsuarios {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Adiciona espaço entre os itens */
+    justify-content: space-between; /* Adiciona espaço entre os itens */
     width: 404px;
     height: 60px;
-    padding: 0 20px;
-    /* Espaçamento interno para melhor aparência */
+    padding: 0 20px; /* Espaçamento interno para melhor aparência */
   }
 
   .inicio {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
     align-items: center;
     height: 35px;
     width: 35px;
@@ -1079,26 +1046,20 @@ a:focus {
   .inicio a {
     display: flex;
     align-items: center;
-    width: 25px;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 25px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 25px; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 25px; /* Mudança: Manter a proporção da imagem */
   }
 
   .inicio img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .menu {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    /* Mudança: Alinhar itens verticalmente */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center; /* Mudança: Alinhar itens verticalmente */
     height: 35px;
     width: 100px;
     background-color: #fcffff;
@@ -1106,23 +1067,16 @@ a:focus {
   }
 
   .menu a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
-    width: 25px;
-    /* Mudança: Largura fixa */
-    height: 25px;
-    /* Mudança: Altura fixa */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
+    width: 25px; /* Mudança: Largura fixa */
+    height: 25px; /* Mudança: Altura fixa */
   }
 
   .menu img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .cabecalho {
@@ -1162,32 +1116,26 @@ a:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* Centraliza verticalmente */
+    align-items: center; /* Centraliza verticalmente */
     margin-left: 5px;
     margin-right: 5px;
     margin: 10px 0;
     background-color: #00bfba;
     height: 180px;
-    width: 404px;
-    /* Ajuste conforme necessário */
+    width: 404px; /* Ajuste conforme necessário */
     border-radius: 20px;
-    position: relative;
-    /* Adicionado para posicionar o botão Play */
+    position: relative; /* Adicionado para posicionar o botão Play */
   }
 
   .aviso h2 {
     line-height: 1;
-    font-size: 1.5em;
-    /* Reduzi o tamanho do texto para caber melhor */
+    font-size: 1.5em; /* Reduzi o tamanho do texto para caber melhor */
     font-weight: 800;
   }
 
   .avisoTexto {
-    text-align: center;
-    /* Centraliza o conteúdo */
-    margin-bottom: 0px;
-    /* Espaçamento abaixo do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 0px; /* Espaçamento abaixo do texto */
   }
 
   .playPauseBtn {
@@ -1195,10 +1143,8 @@ a:focus {
     align-items: center;
     justify-items: center;
     position: absolute;
-    bottom: 5px;
-    /* Distância do fundo */
-    right: 5px;
-    /* Distância da direita */
+    bottom: 5px; /* Distância do fundo */
+    right: 5px; /* Distância da direita */
     background-color: #ffffff;
     color: #00bfba;
     border: none;
@@ -1208,22 +1154,17 @@ a:focus {
   }
 
   .playPauseBtn a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
   }
 
   .playPauseBtn img {
     display: flex;
     justify-items: center;
     align-items: center;
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 30px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 30px; /* Mudança: Manter a proporção da imagem */
   }
 
   .tituloOrientacoes {
@@ -1340,8 +1281,7 @@ a:focus {
   }
 
   .botao {
-    display: inline-block;
-    /* Para ficar um abaixo do outro */
+    display: inline-block; /* Para ficar um abaixo do outro */
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -1425,19 +1365,16 @@ a:focus {
   #opcoesUsuarios {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Adiciona espaço entre os itens */
+    justify-content: space-between; /* Adiciona espaço entre os itens */
     width: 383px;
     height: 60px;
-    padding: 0 20px;
-    /* Espaçamento interno para melhor aparência */
+    padding: 0 20px; /* Espaçamento interno para melhor aparência */
   }
 
   .inicio {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
     align-items: center;
     height: 35px;
     width: 35px;
@@ -1448,26 +1385,20 @@ a:focus {
   .inicio a {
     display: flex;
     align-items: center;
-    width: 25px;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 25px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 25px; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 25px; /* Mudança: Manter a proporção da imagem */
   }
 
   .inicio img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .menu {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    /* Mudança: Alinhar itens verticalmente */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center; /* Mudança: Alinhar itens verticalmente */
     height: 35px;
     width: 100px;
     background-color: #fcffff;
@@ -1475,23 +1406,16 @@ a:focus {
   }
 
   .menu a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
-    width: 25px;
-    /* Mudança: Largura fixa */
-    height: 25px;
-    /* Mudança: Altura fixa */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
+    width: 25px; /* Mudança: Largura fixa */
+    height: 25px; /* Mudança: Altura fixa */
   }
 
   .menu img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .cabecalho {
@@ -1531,32 +1455,26 @@ a:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* Centraliza verticalmente */
+    align-items: center; /* Centraliza verticalmente */
     margin-left: 5px;
     margin-right: 5px;
     margin: 10px 0;
     background-color: #00bfba;
     height: 180px;
-    width: 383px;
-    /* Ajuste conforme necessário */
+    width: 383px; /* Ajuste conforme necessário */
     border-radius: 20px;
-    position: relative;
-    /* Adicionado para posicionar o botão Play */
+    position: relative; /* Adicionado para posicionar o botão Play */
   }
 
   .aviso h2 {
     line-height: 1;
-    font-size: 1.5em;
-    /* Reduzi o tamanho do texto para caber melhor */
+    font-size: 1.5em; /* Reduzi o tamanho do texto para caber melhor */
     font-weight: 800;
   }
 
   .avisoTexto {
-    text-align: center;
-    /* Centraliza o conteúdo */
-    margin-bottom: 0px;
-    /* Espaçamento abaixo do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 0px; /* Espaçamento abaixo do texto */
   }
 
   .playPauseBtn {
@@ -1564,10 +1482,8 @@ a:focus {
     align-items: center;
     justify-items: center;
     position: absolute;
-    bottom: 5px;
-    /* Distância do fundo */
-    right: 5px;
-    /* Distância da direita */
+    bottom: 5px; /* Distância do fundo */
+    right: 5px; /* Distância da direita */
     background-color: #ffffff;
     color: #00bfba;
     border: none;
@@ -1577,22 +1493,17 @@ a:focus {
   }
 
   .playPauseBtn a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
   }
 
   .playPauseBtn img {
     display: flex;
     justify-items: center;
     align-items: center;
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 30px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 30px; /* Mudança: Manter a proporção da imagem */
   }
 
   .tituloOrientacoes {
@@ -1709,8 +1620,7 @@ a:focus {
   }
 
   .botao {
-    display: inline-block;
-    /* Para ficar um abaixo do outro */
+    display: inline-block; /* Para ficar um abaixo do outro */
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -1794,19 +1704,16 @@ a:focus {
   #opcoesUsuarios {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Adiciona espaço entre os itens */
+    justify-content: space-between; /* Adiciona espaço entre os itens */
     width: 365px;
     height: 60px;
-    padding: 0 20px;
-    /* Espaçamento interno para melhor aparência */
+    padding: 0 20px; /* Espaçamento interno para melhor aparência */
   }
 
   .inicio {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
     align-items: center;
     height: 35px;
     width: 35px;
@@ -1817,26 +1724,20 @@ a:focus {
   .inicio a {
     display: flex;
     align-items: center;
-    width: 25px;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 25px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 25px; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 25px; /* Mudança: Manter a proporção da imagem */
   }
 
   .inicio img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .menu {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    /* Mudança: Alinhar itens verticalmente */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center; /* Mudança: Alinhar itens verticalmente */
     height: 35px;
     width: 100px;
     background-color: #fcffff;
@@ -1844,23 +1745,16 @@ a:focus {
   }
 
   .menu a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
-    width: 25px;
-    /* Mudança: Largura fixa */
-    height: 25px;
-    /* Mudança: Altura fixa */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
+    width: 25px; /* Mudança: Largura fixa */
+    height: 25px; /* Mudança: Altura fixa */
   }
 
   .menu img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .cabecalho {
@@ -1900,32 +1794,26 @@ a:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* Centraliza verticalmente */
+    align-items: center; /* Centraliza verticalmente */
     margin-left: 5px;
     margin-right: 5px;
     margin: 10px 0;
     background-color: #00bfba;
     height: 180px;
-    width: 365px;
-    /* Ajuste conforme necessário */
+    width: 365px; /* Ajuste conforme necessário */
     border-radius: 20px;
-    position: relative;
-    /* Adicionado para posicionar o botão Play */
+    position: relative; /* Adicionado para posicionar o botão Play */
   }
 
   .aviso h2 {
     line-height: 1;
-    font-size: 1.5em;
-    /* Reduzi o tamanho do texto para caber melhor */
+    font-size: 1.5em; /* Reduzi o tamanho do texto para caber melhor */
     font-weight: 800;
   }
 
   .avisoTexto {
-    text-align: center;
-    /* Centraliza o conteúdo */
-    margin-bottom: 0px;
-    /* Espaçamento abaixo do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 0px; /* Espaçamento abaixo do texto */
   }
 
   .playPauseBtn {
@@ -1933,10 +1821,8 @@ a:focus {
     align-items: center;
     justify-items: center;
     position: absolute;
-    bottom: 5px;
-    /* Distância do fundo */
-    right: 5px;
-    /* Distância da direita */
+    bottom: 5px; /* Distância do fundo */
+    right: 5px; /* Distância da direita */
     background-color: #ffffff;
     color: #00bfba;
     border: none;
@@ -1946,22 +1832,17 @@ a:focus {
   }
 
   .playPauseBtn a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
   }
 
   .playPauseBtn img {
     display: flex;
     justify-items: center;
     align-items: center;
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 30px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 30px; /* Mudança: Manter a proporção da imagem */
   }
 
   .tituloOrientacoes {
@@ -2078,8 +1959,7 @@ a:focus {
   }
 
   .botao {
-    display: inline-block;
-    /* Para ficar um abaixo do outro */
+    display: inline-block; /* Para ficar um abaixo do outro */
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -2163,19 +2043,16 @@ a:focus {
   #opcoesUsuarios {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Adiciona espaço entre os itens */
+    justify-content: space-between; /* Adiciona espaço entre os itens */
     width: 350px;
     height: 60px;
-    padding: 0 20px;
-    /* Espaçamento interno para melhor aparência */
+    padding: 0 20px; /* Espaçamento interno para melhor aparência */
   }
 
   .inicio {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
     align-items: center;
     height: 35px;
     width: 35px;
@@ -2186,26 +2063,20 @@ a:focus {
   .inicio a {
     display: flex;
     align-items: center;
-    width: 25px;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 25px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 25px; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 25px; /* Mudança: Manter a proporção da imagem */
   }
 
   .inicio img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .menu {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    /* Mudança: Alinhar itens verticalmente */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center; /* Mudança: Alinhar itens verticalmente */
     height: 35px;
     width: 100px;
     background-color: #fcffff;
@@ -2213,23 +2084,16 @@ a:focus {
   }
 
   .menu a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
-    width: 25px;
-    /* Mudança: Largura fixa */
-    height: 25px;
-    /* Mudança: Altura fixa */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
+    width: 25px; /* Mudança: Largura fixa */
+    height: 25px; /* Mudança: Altura fixa */
   }
 
   .menu img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .cabecalho {
@@ -2269,18 +2133,15 @@ a:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* Centraliza verticalmente */
+    align-items: center; /* Centraliza verticalmente */
     margin-left: 5px;
     margin-right: 5px;
     margin: 10px 0;
     background-color: #00bfba;
     height: 180px;
-    width: 350px;
-    /* Ajuste conforme necessário */
+    width: 350px; /* Ajuste conforme necessário */
     border-radius: 20px;
-    position: relative;
-    /* Adicionado para posicionar o botão Play */
+    position: relative; /* Adicionado para posicionar o botão Play */
   }
 
   .aviso h2 {
@@ -2291,10 +2152,8 @@ a:focus {
   }
 
   .avisoTexto {
-    text-align: center;
-    /* Centraliza o conteúdo */
-    margin-bottom: 0px;
-    /* Espaçamento abaixo do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 0px; /* Espaçamento abaixo do texto */
   }
 
   .playPauseBtn {
@@ -2302,10 +2161,8 @@ a:focus {
     align-items: center;
     justify-items: center;
     position: absolute;
-    bottom: 5px;
-    /* Distância do fundo */
-    right: 5px;
-    /* Distância da direita */
+    bottom: 5px; /* Distância do fundo */
+    right: 5px; /* Distância da direita */
     background-color: #ffffff;
     color: #00bfba;
     border: none;
@@ -2315,22 +2172,17 @@ a:focus {
   }
 
   .playPauseBtn a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
   }
 
   .playPauseBtn img {
     display: flex;
     justify-items: center;
     align-items: center;
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 30px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 30px; /* Mudança: Manter a proporção da imagem */
   }
 
   .tituloOrientacoes {
@@ -2447,8 +2299,7 @@ a:focus {
   }
 
   .botao {
-    display: inline-block;
-    /* Para ficar um abaixo do outro */
+    display: inline-block; /* Para ficar um abaixo do outro */
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -2532,19 +2383,16 @@ a:focus {
   #opcoesUsuarios {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Adiciona espaço entre os itens */
+    justify-content: space-between; /* Adiciona espaço entre os itens */
     width: 310px;
     height: 60px;
-    padding: 0 20px;
-    /* Espaçamento interno para melhor aparência */
+    padding: 0 20px; /* Espaçamento interno para melhor aparência */
   }
 
   .inicio {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
     align-items: center;
     height: 35px;
     width: 35px;
@@ -2555,26 +2403,20 @@ a:focus {
   .inicio a {
     display: flex;
     align-items: center;
-    width: 25px;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 25px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 25px; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 25px; /* Mudança: Manter a proporção da imagem */
   }
 
   .inicio img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .menu {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    /* Não é necessário, mas pode ser mantido */
-    align-items: center;
-    /* Mudança: Alinhar itens verticalmente */
+    justify-content: center; /* Não é necessário, mas pode ser mantido */
+    align-items: center; /* Mudança: Alinhar itens verticalmente */
     height: 35px;
     width: 100px;
     background-color: #fcffff;
@@ -2582,23 +2424,16 @@ a:focus {
   }
 
   .menu a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
-    width: 25px;
-    /* Mudança: Largura fixa */
-    height: 25px;
-    /* Mudança: Altura fixa */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
+    width: 25px; /* Mudança: Largura fixa */
+    height: 25px; /* Mudança: Altura fixa */
   }
 
   .menu img {
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: auto;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: auto; /* Mudança: Manter a proporção da imagem */
   }
 
   .cabecalho {
@@ -2638,32 +2473,26 @@ a:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* Centraliza verticalmente */
+    align-items: center; /* Centraliza verticalmente */
     margin-left: 5px;
     margin-right: 5px;
     margin: 10px 0;
     background-color: #00bfba;
     height: 180px;
-    width: 310px;
-    /* Ajuste conforme necessário */
+    width: 310px; /* Ajuste conforme necessário */
     border-radius: 20px;
-    position: relative;
-    /* Adicionado para posicionar o botão Play */
+    position: relative; /* Adicionado para posicionar o botão Play */
   }
 
   .aviso h2 {
     line-height: 1;
-    font-size: 1.5em;
-    /* Reduzi o tamanho do texto para caber melhor */
+    font-size: 1.5em; /* Reduzi o tamanho do texto para caber melhor */
     font-weight: 800;
   }
 
   .avisoTexto {
-    text-align: center;
-    /* Centraliza o conteúdo */
-    margin-bottom: 0px;
-    /* Espaçamento abaixo do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 0px; /* Espaçamento abaixo do texto */
   }
 
   .playPauseBtn {
@@ -2671,10 +2500,8 @@ a:focus {
     align-items: center;
     justify-items: center;
     position: absolute;
-    bottom: 5px;
-    /* Distância do fundo */
-    right: 5px;
-    /* Distância da direita */
+    bottom: 5px; /* Distância do fundo */
+    right: 5px; /* Distância da direita */
     background-color: #ffffff;
     color: #00bfba;
     border: none;
