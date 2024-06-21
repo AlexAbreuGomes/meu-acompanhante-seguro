@@ -2684,22 +2684,17 @@ a:focus {
   }
 
   .playPauseBtn a {
-    display: flex;
-    /* Mudança: Usar flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Mudança: Centralizar horizontalmente */
-    align-items: center;
-    /* Mudança: Centralizar verticalmente */
+    display: flex; /* Mudança: Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Mudança: Centralizar horizontalmente */
+    align-items: center; /* Mudança: Centralizar verticalmente */
   }
 
   .playPauseBtn img {
     display: flex;
     justify-items: center;
     align-items: center;
-    width: 100%;
-    /* Mudança: Certificar-se de que as imagens preencham o contêiner */
-    height: 30px;
-    /* Mudança: Manter a proporção da imagem */
+    width: 100%; /* Mudança: Certificar-se de que as imagens preencham o contêiner */
+    height: 30px; /* Mudança: Manter a proporção da imagem */
   }
 
   .tituloOrientacoes {
@@ -2816,8 +2811,7 @@ a:focus {
   }
 
   .botao {
-    display: inline-block;
-    /* Para ficar um abaixo do outro */
+    display: inline-block; /* Para ficar um abaixo do outro */
     align-items: center;
     text-align: center;
     justify-content: center;
